@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;}
+
+    :root{
+        --primary-color: rgb(84, 75, 61);
+        --secondary-color: rgb(78, 110, 88);
+        --accent1-color: #Af3f2b;
+        --accent2-color: #36454f;
+    
+        --heading-font: Raleway;
+        --paragraph-font: Raleway;
+    
+        --nav-background-color: #bcab79;
+        --nav-link-color: #FFFFFF;
+        --nav-hover-link-color: #fafbfa;
+        --nav-hover-background-color: rgb(84, 75, 61);
+    }
+
+
+
+
+header {
+
+    background: rgb(84, 75, 61);
+    padding: 2rem;
+    width: 900px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 392px;
+    border-style: solid;
+    
+
+}
+
+.headerName{
+    position: relative;
+    left: 400px;
+    top: 50px;
+}
+
+.profilePic {
+    position: relative;
+    left: 200px;
+    top: -80px;
+    width: 125px;
+    height: auto;
+    padding: 1px;
+    border-style: outset;
+}
+
+nav {
+    float: center;
+    position: relative;
+    top: 50px;
+    left: 392px;
+    width: 900px;
+    height: 200px;
+    background-color: rgb(78, 110, 88);
+    padding: 1rem;
+    text-align: center;
+    border-style: solid;
+}
+
+
+.site-link {
+    list-style-type: none;
+    font-size: 25px;
+    position: relative;
+    right: 20px;
+
+}
+
+.site-link:hover {
+    color: rgb(220, 232, 224);
+    background-color: var(--nav-hover-background-color);
+}
+
+main {
+    display: grid;
+    grid-row: 3/4;
+    width: 900px;
+    height: 200px;
+    margin: 5% auto;
+    padding: 10px;
+}
+.hClass {
+    display: grid;
+    grid-row: 4/5;
+    position: center;
+    padding: 1rem;
+    text-align: center;
+    border-style: line;
+}
+.classCardH3 {
+   
+    background: rgb(78, 110, 88);
+    padding: 1rem;
+    width: 900px;
+    height: 50px;
+    position: relative;
+    left: -50px;
+    top: -70px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+}
+.classCard {
+    display: grid;
+    background: rgb(220, 232, 224);
+    grid-row: 5/6;
+    padding: 3rem;
+    width: 900px;
+    height: 200px;
+    position: center;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.activity-link {
+    position: relative;
+    left: -75px;
+    top: -70px;
+    list-style-type: none;
+
+}
+.activity-link:hover {
+    color: rgb(220, 232, 224);
+    background-color: rgb(78, 110, 88);
+}
+
+.infoCard {
+    display: grid;
+    background: rgb(220, 232, 224);
+    grid-row: 6/7;
+    padding: 2rem;
+    width: 900px;
+    height: 300px;
+    text-align: center;
+    position: center;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+
+.inforCardH2{
+
+    background: rgb(78, 110, 88);
+    padding: 1rem;
+    width: 900px;
+    height: 50px;
+    position: relative;
+    left: -34px;
+    top: -55px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.infoH3{
+    position: relative;
+    left: -40px;
+    top: -70px;
+}
+.infoH3:hover {
+    color: rgb(220, 232, 224);
+    background-color: rgb(78, 110, 88);
+}
+
+footer {
+    display: grid;
+
+    width: 900px;
+    height: 50px;
+    grid-row: 7/8;
+    background: wheat;
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    top: 400px;
+    left: 392px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
