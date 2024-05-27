@@ -1,10 +1,7 @@
-function getYear(){
-    const yearSpan = document.querySelector('#currentYear');
-    const currentYear = new Date();
-    yearSpan.innerText = currentYear.getFullYear();
-    return currentYear;
-}
-function getModDate(){
-    let oLastModif = new Date(document.lastModified);
-    return oLastModif;
-}
+document.getElementById("assignment-last-modified").innerHTML = document.lastModified;
+document.getElementById("copy-year").innerHTML = new Date().getFullYear();
+
+function toggleMenu() {
+    
+    document.getElementById("primaryNav").classList.toggle("hide");
+   }
