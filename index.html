@@ -7,6 +7,7 @@
     <meta author="Matthew Shank">
     <link rel="stylesheet" href="styles/base.css">
     <meta description="Matt Shank's CIT 230 landing page or Course Assignment Portal">
+    <script src="/scripts/getdates.js" async></script>
     <title>Matthew Shank - WDD 230 - Frontend Development </title>
     
 
@@ -43,12 +44,9 @@
         </section>
     </main>
     <footer>
-        <p1>© <script type = "text/javascript" 
-            function getYear()></script> Matthew Shank </p1>
-        <p2>Last Modified <script type = "text/javascript" 
-            function getModDate()></script> </p2>
+        <p1> &copy; <span id="copy-year"></span> Matthew Shank </p1>
+        <p class="last-modified">Last Updated: <span id="assignment-last-modified"></span></p>
     </footer>
 
-    <script src="/scripts/getdates.js" async></script>
 </body>
 </html>
