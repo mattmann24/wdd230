@@ -2,18 +2,19 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
+        <html lang="en-US"></html>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Winners World Chamber of Commerce | WDD-230</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vineyard Chamber of Commerce | WDD 230</title>
         <link rel="shortcut icon" href="images/icon.ico" type="imageicon">
-
+        <script src="/scripts/getdates.js" async></script>
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css" />
         <link rel="stylesheet" href="styles/larger.css" />
     </head>
 
-    <body onload="getyear()">
+    <body>
         <div id="page-container" class="page-container">
             <div id="content-wrap">
                 <header class="clearfix">
@@ -40,40 +41,29 @@
                         <ul class="primaryNav">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="discover.html">Discover</a></li>
-                            <li><a href="join.html">Join</a></li>
-                            <li><a href="directory.html">Directory</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
-                    <div id="dateToday">
-                        <p>
-                            <span id="todayDate"></span>
-                        </p>
-                    </div>
+                    
                 </header>
 
-                <main class="indexMain">
+                <main class="Main">
 
                     <div id="mainHero">
                         <div id="heroDiv">
                             <h3 class="heroTitle">Chamber of Commerce</h3>
                             <img src="images/VineyardHero.png" alt="Hero Image" >
                         </div>
-                        <div id="Join">
-                            <a href="index.html" class="hero_Text">Join the
-                                Chamber ... </a>
-                        </div>
+                        
                     </div>
                     <div id="event">
                         <div id="eventDiv">
-                           
-                    
                             <h2>Join our journey to inspire local commerce</h2>
                             <a id="link" href="#">Learn More ...</a>
                         </div>
                     </div>
                     <div id="weather">
-                        <div id="weatherDiv">
+                        <div class="weather" id="weatherDiv">
                             <h2>Weather </h2>
                             
                             <img src="/images/weather.png" alt="" id="weathericon" />
@@ -108,7 +98,6 @@
             </div>
             <footer id="footer">
                 <div id="footer-wrapper">
-                    <img id="footerIMG" src="images/logo.webp" alt="logo">
                     <div id="contact-info">
                         <h4>*** Vineyard Chamber of Commerce ***</h4>
                         <p>
@@ -120,8 +109,7 @@
                 </div>
                 <hr>
                 <p id="sub-footer">
-                    &copy; <span id="current_year"></span> Matthew Shank | WDD 230 | Chamber Project | Last Updated: <span
-                        id="last_updated"></span>
+                    &copy; <span id="copy-year"></span> Matthew Shank | WDD 230 | Chamber Project | Last Updated: <span id="last-modified"></span></p>
                 </p>
             </footer>
         </div>

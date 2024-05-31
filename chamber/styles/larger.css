@@ -19,6 +19,10 @@
     text-align: center;
     color: rgb(249, 253, 236)
   }
+
+  .weather {
+    border-style:double;
+  }
   
 
 
@@ -44,5 +48,6 @@
       margin-left: 500px;
       margin-top: -60px;
     }
+
   
 }
