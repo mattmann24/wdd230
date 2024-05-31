@@ -14,16 +14,15 @@
     </head>
 
     <body onload="getyear()">
-        <div id="page-container">
+        <div id="page-container" class="page-container">
             <div id="content-wrap">
                 <header class="clearfix">
                     <div class="main_header">
                         <div id="logo">
                             <img src="images/favicon.png" alt="VCC logo"> 
                             <div>
-                                <h1>Vineyard Chamber of Commerce</h1>
+                                <h1 class="Title">Vineyard Chamber of Commerce</h1>
                             </div>
-                        </div>
                         <div id="social_media">
                             <a href="https://www.facebook.com/"><img
                                     class="social-icons" src="images/fb_icon.webp"
@@ -36,12 +35,9 @@
                                 alt="twitter"></a>
 
                         </div>
-                        <nav>
-                            <button id="hamburgerBtn"><span>&#9776;</span><span>&#9776;</span></button>
-                        </nav>
-                    </div>
+                    
                     <nav>
-                        <ul id="primaryNav">
+                        <ul class="primaryNav">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="discover.html">Discover</a></li>
                             <li><a href="join.html">Join</a></li>
@@ -59,33 +55,30 @@
                 <main class="indexMain">
 
                     <div id="mainHero">
-                        <div id="heroH3Div">
-                            <h3>Vineyard Chamber of Commerce</h3>
+                        <div id="heroDiv">
+                            <h3 class="heroTitle">Chamber of Commerce</h3>
+                            <img src="images/VineyardHero.png" alt="Hero Image" >
                         </div>
                         <div id="Join">
-                            <a href="index.html" class="heroBtnText">Join the
+                            <a href="index.html" class="hero_Text">Join the
                                 Chamber ... </a>
                         </div>
                     </div>
                     <div id="event">
                         <div id="eventDiv">
-                            <img src="images/VineyardHero.png" alt="Hero Image">
+                           
                     
-                            <h2>Winners Keep Winning</h2>
-                            <p>Listen a full documentary below</p>
-                            <br><br>
+                            <h2>Join our journey to inspire local commerce</h2>
                             <a id="link" href="#">Learn More ...</a>
                         </div>
                     </div>
                     <div id="weather">
                         <div id="weatherDiv">
                             <h2>Weather </h2>
-
-                            <!-- <h2 class="h2weather">Weather</h2> -->
-                            <figure>
-                                <img src="" alt="" id="weathericon" />
-                            </figure>
-                            <hr>
+                            
+                            <img src="/images/weather.png" alt="" id="weathericon" />
+                            <!-- <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by GOWI - Flaticon</a> -->
+                            
                             <p><strong id="currentTemp"> </strong> | <span
                                     id="currentCondition"></span> | <span
                                     id="windSpeed"></span> m/h</p>
@@ -96,55 +89,21 @@
                         <div id="newsDiv">
                             <h3>Latest News</h3>
                             <p id="latestNews">
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna
-                                aliqua. Nisl tincidunt
-                                eget nullam non. Quis hendrerit dolor magna eget
-                                est lorem ipsum dolor
-                                sit. Volutpat odio facilisis mauris sit amet
-                                massa...
+ 
                             </p>
                         </div>
                     </div>
                     <div id="spotlightSection">
 
-                        <div id="spotlight1">
+                        <div id="spotlight">
 
-                            <div class="sport_image">
-                                <h3>wWw Delivery Services</h3>
-                                <img src="images/bus.png" alt="Delivery bus ">
-                                <p>Excellence in Delivery</p>
+                            <div class="spot_image">
+                                <h3>Vineyard Landscaping</h3>
+                                <img src="images/landscaping_spot.png" alt="Landscaping ">
+                                <h4>We know to grow</h4>
                             </div>
                         </div>
-                        <div id="spotlight2">
-                            <div id="iceCreamDiv">
-                                <h3>WeDev </h3>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet....</p>
-                                <hr>
-                            </div>
-                        </div>
-                        <div id="spotlight3">
-                            <div id="accraCart">
-                                <h3>Accra Cart</h3>
-                                <p>-We sell-<br>
-                                    Quality computer hardware accessories</p>
-                                <hr>
-                                <a id="link" href="#">Buy 2 get 1 free ....</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="join">
-                        <div class="joinBtn">
-                            <a href="index.html">Join us!</a>
-                        </div>
-                        <p>
-                            Kindly join the winning team today
-                        </p>
-                        <h3>WINNERS WORLD</h3>
-                    </div>
+
                 </main>
             </div>
             <footer id="footer">
@@ -161,7 +120,7 @@
                 </div>
                 <hr>
                 <p id="sub-footer">
-                    &copy; <span id="current_year"></span> .:|:. Matthew Shank .:|:. Accra | Last Updated: <span
+                    &copy; <span id="current_year"></span> Matthew Shank | WDD 230 | Chamber Project | Last Updated: <span
                         id="last_updated"></span>
                 </p>
             </footer>

@@ -122,8 +122,8 @@
         height: 45px;
     }
 
-    .social-icons img {
-        max-width: 50px;
+    .social-icons {
+        max-width: 30px;
         max-height: auto;
     
       }
