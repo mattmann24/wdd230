@@ -22,6 +22,7 @@
 header {
 
     background: rgb(84, 75, 61);
+    color: rgb(255,255,255);
     padding: 2rem;
     width: 900px;
     height: 200px;
@@ -50,7 +51,6 @@ header {
 }
 
 nav {
-    float: center;
     position: relative;
     top: 50px;
     left: 392px;
@@ -60,6 +60,7 @@ nav {
     padding: 1rem;
     text-align: center;
     border-style: solid;
+    color: rgb(255,255,255);
 }
 
 
@@ -68,12 +69,14 @@ nav {
     font-size: 25px;
     position: relative;
     right: 20px;
+    color: rgb(255,255,255);
 
 }
 
 .site-link:hover {
     color: rgb(220, 232, 224);
     background-color: var(--nav-hover-background-color);
+    color: var(--nav-link-color);
 }
 
 main {
@@ -83,14 +86,15 @@ main {
     height: 200px;
     margin: 5% auto;
     padding: 10px;
+    color: rgb(255,255,255);
 }
 .hClass {
     display: grid;
     grid-row: 4/5;
-    position: center;
     padding: 1rem;
     text-align: center;
-    border-style: line;
+    border-style:double;
+    color: rgb(255,255,255);
 }
 .classCardH3 {
    
@@ -104,6 +108,7 @@ main {
     text-align: center;
     border-style: solid;
     border-radius: 5px;
+    color: rgb(255,255,255);
 }
 .classCard {
     display: grid;
@@ -112,10 +117,10 @@ main {
     padding: 3rem;
     width: 900px;
     height: 200px;
-    position: center;
     text-align: center;
     border-style: solid;
     border-radius: 5px;
+
 }
 
 .activity-link {
@@ -123,6 +128,7 @@ main {
     left: -75px;
     top: -70px;
     list-style-type: none;
+    color: rgb(78, 110, 88);
 
 }
 .activity-link:hover {
@@ -138,7 +144,6 @@ main {
     width: 900px;
     height: 300px;
     text-align: center;
-    position: center;
     border-style: solid;
     border-radius: 5px;
 }
@@ -162,6 +167,7 @@ main {
     position: relative;
     left: -40px;
     top: -70px;
+    color: rgb(78, 110, 88);
 }
 .infoH3:hover {
     color: rgb(220, 232, 224);
@@ -174,7 +180,7 @@ footer {
     width: 900px;
     height: 50px;
     grid-row: 7/8;
-    background: wheat;
+    background: rgb(220, 232, 224);
     padding: 5rem;
     text-align: center;
     position: relative;
