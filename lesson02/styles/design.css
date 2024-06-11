@@ -44,7 +44,7 @@ article p {
 
 .callout {
 	color: #f5f0f0;
-	background-color: #440838;
+	background-color: rgb(78, 110, 88);
     padding: 1rem;
     grid-row: 3;
     grid-column: 1/3;
