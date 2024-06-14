@@ -99,8 +99,9 @@ header {
         display: block;
 
     }
-    .site-link a {
+    .open.site-links .site-link {
         display:block;
+        text-decoration: none;
         grid-template-rows: auto;
         justify-items: center;
         list-style-type: none;
