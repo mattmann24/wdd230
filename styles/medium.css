@@ -110,8 +110,17 @@ header {
         color: rgb(255,255,255);
         background-color: rgb(78, 110, 88);;
 
+}
 
+.site-link a {
+    color: rgb(255,255,255);
+    background-color: rgb(78, 110, 88);
 
+}
+
+.site-link a:hover {
+    color:rgb(78, 110, 88);
+    background-color:rgb(84, 75, 61);
 }
 
 
