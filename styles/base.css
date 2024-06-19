@@ -85,7 +85,7 @@
         grid-template-columns: repeat(5, 1fr);
         position: relative;
         background-color: rgb(78, 110, 88);
-        padding: .5rem;
+        padding: .7rem;
         text-decoration: none;
         text-align: center;
         border-style: solid;
@@ -95,12 +95,30 @@
     .site-link a {
         color: rgb(255,255,255);
         background-color: rgb(78, 110, 88);
+        padding: .3rem;
 
     }
 
     .site-link a:hover {
-        color:rgb(78, 110, 88);
+        color:rgb(220, 232, 224);
         background-color:rgb(84, 75, 61);
+        padding: .1rem;
+        border-radius: 6px;
+    }
+
+    .return-link a {
+        color: rgb(255,255,255);
+        background-color: rgb(78, 110, 88);
+        padding: .3rem;
+        border-radius: 6px;
+
+    }
+
+    .return-link a:hover {
+        color:rgb(220, 232, 224);
+        background-color:rgb(84, 75, 61);
+        padding: .3rem;
+        border-radius: 6px;
     }
 
 
