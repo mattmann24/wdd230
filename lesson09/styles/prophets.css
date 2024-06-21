@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+
+body {
+    background-color: rgb(21, 98, 146);
+    font-family: 'IM Fell English SC';
+}
+
+h1 {
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    grid-gap: 2rem;
+}
+
+#cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1em;
+    grid-gap: 1em;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(128, 13, 0);
+    margin: 0 auto;
+    width: 345px;
+    flex-direction: column;
+}
+
+#cards section h2 {
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+
+
+#cards img {
+    max-width: 320px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+}
+

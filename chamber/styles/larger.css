@@ -27,12 +27,7 @@
 
 
 
-  .page-container {
-    display: grid;
-    grid-template-columns: minmax(5,7);
-
-
-  }
+  
     nav button {
       display: grid;
       grid-template-columns: 2/3;
