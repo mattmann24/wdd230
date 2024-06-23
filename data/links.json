@@ -1,15 +1,6 @@
 {
     "lessons":[
         {
-            "lesson":"01",
-            "links":[
-            {
-                "url":"./lesson01/holygrail.html",
-                "title":"Holy Grail"
-            }
-            ]
-        },
-        {
             "lesson":"02",
             "links":[
             {
@@ -98,6 +89,15 @@
             {
                 "url":"./lesson09/prophets.html",
                 "title":"Prophets"
+            }
+            ]
+        },
+        {
+            "lesson":"10",
+            "links":[
+            {
+                "url":"./lesson10/",
+                "title":"PlaceHolder"
             }
             ]
         }
