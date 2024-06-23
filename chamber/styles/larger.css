@@ -3,7 +3,7 @@
 
 
   .primaryNav {
-    background-color: rgb(170, 222, 255);
+    background-color: #3e6fac;
   }
 
   .heroDiv {
@@ -18,6 +18,12 @@
     float: center;
     text-align: center;
     color: rgb(249, 253, 236)
+  }
+
+  #logo img{
+    width: 90px;
+    height: auto;
+    max-width: 100%;
   }
 
   .weather {
@@ -44,5 +50,12 @@
       margin-top: -60px;
     }
 
+    
+
+    #event h2{
+      background-color: #0C1F41;
+      color: white;
+
+    }
   
 }
