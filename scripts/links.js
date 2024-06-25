@@ -54,4 +54,4 @@ function displayLinks(weeks) {
       ul.appendChild(weekLi);
     }
   }
-  
+  document.addEventListener("DOMContentLoaded", getLinks);
