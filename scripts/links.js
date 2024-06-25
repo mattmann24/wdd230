@@ -11,10 +11,8 @@ async function getLinks() {
  
 }
 
-getLinks(); 
-
 function displayLinks(weeks) {
-    const ul = document.querySelector("activityLinks");
+    const ul = document.getElementById("activityLinks");
   
     
     const weeksMap = {};
@@ -29,29 +27,31 @@ function displayLinks(weeks) {
       weeksMap[week.lesson].push(...week.links);
     });
   
-    // Now, create the list items for each week
+    
     for (const [weekNumber, links] of Object.entries(weeksMap)) {
       const weekLi = document.createElement("li");
-      const weekTitle = document.createElement("h5");
-      weekTitle.textContent = `Week ${weekNumber}`;
+      const weekTitle = document.createElement("h4");
+      weekTitle.textContent = `Week ${weekNumber} | `;
       weekLi.appendChild(weekTitle);
   
-      // Create a sublist for the lessons in this week
+      
       const lessonUl = document.createElement("ul");
       links.forEach(link => {
-        const lessonLi = document.createElement("li");
+        
+        
         const lessonA = document.createElement("a");
         lessonA.href = baseUrl + link.url;
         lessonA.textContent = link.title;
+        
         if (link.target) {
           lessonA.target = link.target;
         }
-        lessonLi.appendChild(lessonA);
-        lessonUl.appendChild(lessonLi);
+        weekLi.appendChild(lessonA);
+        lessonUl.appendChild(weekLi);
       });
   
-      weekLi.appendChild(lessonUl);
-      ul.appendChild(weekLi);
+      
+      ul.appendChild(lessonUl);
     }
   }
   document.addEventListener("DOMContentLoaded", getLinks);
