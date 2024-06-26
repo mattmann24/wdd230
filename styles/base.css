@@ -307,4 +307,20 @@
         border-radius: 6px;
         
     }
+
+    .weather {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .weather, h3, p, figure {
+        padding: .7rem;
+        align-items: center;
+        text-align: center;
+        margin: .1rem;
+    }
+    figure{
+        display: flex;
+    }
 }

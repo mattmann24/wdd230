@@ -22,6 +22,7 @@
     <script src="./scripts/hambutton.js" async></script>
     <script src="./scripts/visitCounter.js" async></script>
     <script src="./scripts/links.js" defer></script>
+    <script src="./scripts/weather.js" async></script>
     <title>Matthew Shank - WDD 230 - Frontend Development </title>
     <link rel="icon" href="./images/MS_favicon.ico">
 
@@ -67,9 +68,21 @@
             </section>
             <section class="infoCard">
                 <h2 class="infoH2">Information</h2>
-                <h3 class="infoH3">Weather</h3>
-                <h3 class="infoH3">Page visits <span class="label"> :: </span><span class="visits"></span></h3>
-                <h3 class="infoH3">Moon phases</h3>
+                <div class="weather">
+                    <h3 class="infoH3"> Weather in Vineyard:  </h3> 
+                    <p> Current Temp: <span id="current-temp"></span></p>
+                    <figure>
+                        <figcaption></figcaption>
+                        <img id="weather-icon" src="" alt="">
+                        
+                    </figure>
+                </div>
+                <div>
+                    <h3 class="infoH3">Page visits <span class="label"> : </span><span class="visits"></span></h3>
+                </div>
+                <div>
+                    <h3 class="infoH3">Moon phases</h3>
+                </div>
             </section>
             <section class="townMap">
                 <iframe class="vineyard" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12170.612768039893!2d-111.74954195!3d40.30565875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1718515138085!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
