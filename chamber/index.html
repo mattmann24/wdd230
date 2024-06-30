@@ -16,9 +16,22 @@
     <link rel='icon' href="./images/design-null.svg">
 
     <script src="./scripts/chambergetdates.js" async></script>
+    <script src="./scripts/weather.js" async></script>
+    <script src="./scripts/banner.js" async></script>
 </head>
 
 <body>
+    <div class="banner">
+        <div class="bannerContent">
+            <div class="bannerText">
+                <strong>Reminder:</strong> Don't forget to attend our Chamber Meet and Greet, Wednesday at 7:00 PM. See you there!
+                <button class="bannerClose" type="button">❌</button>
+
+            </div>
+
+        </div>
+
+    </div>
     <header class="clearfix">
         <div class="mainHeader">
             <div id="logo">
@@ -64,13 +77,43 @@
                     
         <div class="weather" id="weatherDiv">
             <h2>Weather </h2>
+                <div class="weather">
+                    <h3 class="infoH3"> Weather in Vineyard:  </h3> 
+                    <p> Current Temp: <span id="current-temp"></span></p>
+                    <figure>
+                        <figcaption></figcaption>
+                        <img id="weather-icon" src="" alt="">
+                        
+                    </figure>
+                    <section class="forecast">
+                        <h3>Three Day Forecast</h3>
+                        <table class="table">
+                            <tbody id="3day">
+                                <tr>
+                                    <th></th>
+                                    <th class="forcastDay1" id="forcastDay1"></th>
+                                    <th class="forcastDay2" id="forcastDay2"></th>
+                                    <th class="forcastDay3" id="forcastDay3"></th>
+                                </tr>
+                                <tr id="3dayTemp">
+                                    <td><img src="./images/weather.png" alt="weathericon" id="weathericon" />
+                                        <!-- <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by GOWI - Flaticon</a> --></td>
+                                    <td><span class="forcastTemp1" id="forcastTemp1"></span></td>
+                                    <td><span class="forcastTemp2" id="forcastTemp2"></span></td>
+                                    <td><span class="forcastTemp3" id="forcastTemp3"></span></td>
+                                </tr>
+                                <tr id="3dayIcon">
+                                    <td><span id="5dayTemp1"></span></td>
+                                    <td><img id="forcastIcon1" src="" alt=""></td>
+                                    <td><img id="forcastIcon2" src="" alt=""></figcaption></td>
+                                    <td><img id="forcastIcon3" src="" alt=""></figcaption></td>
+                                </tr>
+                            </tbody>  
+                        </table>
+                    </section>
+                </div>
                             
-            <img src="./images/weather.png" alt="weathericon" id="weathericon" />
-                <!-- <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by GOWI - Flaticon</a> -->
-                            
-            <p><strong id="currentTemp"> </strong> | <span id="currentCondition"></span> | <span id="windSpeed"></span> m/h</p>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus, corporis voluptates debitis magni tempora aliquid laborum molestiae ducimus, vitae nostrum iure unde eos amet exercitationem omnis sit deleniti blanditiis?
-            </p>
+
 
         </div>
                     
@@ -122,5 +165,6 @@
         </div>
     </footer>
 
+</body>
 
 </html>

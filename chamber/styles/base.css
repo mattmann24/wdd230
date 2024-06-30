@@ -559,3 +559,31 @@ footer {
   grid-column: 2;
 
 }
+
+.banner {
+  background-color: #0C1F41;
+  
+}
+
+.bannerContent {
+  padding: 16px;
+  max-width: 1000px;
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+}
+
+.bannerText{
+  color: white;
+  flex-grow: 1;
+  line-height: 2;
+  font-size: larger;
+
+}
+
+.bannerClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
