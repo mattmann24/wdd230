@@ -1,9 +1,9 @@
 
 const baseUrl = "https://mattmann24.github.io/wdd230/";
-const url='https://mattmann24..github.io/wdd230/chamber/data/members.json';
+const url='https://mattmann24.github.io/wdd230/chamber/data/members.json';
 
 
-const cards = document.querySelector('#cards');
+const cards = document.querySelector('#cardsDirectory');
 
 async function getMembersData() {
     const response = await fetch(url);
@@ -20,15 +20,19 @@ const displayMembers = (members) => {
         let card = document.createElement('section');
         let companyName = document.createElement('h2'); 
         let logo = document.createElement('img');
+
+        let detailCard = document.createElement('section');
+
         let phone = document.createElement('h5')
         let address = document.createElement('h5')
         let memberlevel = document.createElement('h5')
         let website = document.createElement('h5')
 
-        phone.textContent = `${data.members.phoneNumber}`;
-        address.textContent = `${data.members.address}`;
-        memberlevel.textContent = `${data.members.membershiplevel}`;
-        website.textContent = `${data.members.websiteURL}`;
+        companyName.textContent = `${members.name}`
+        phone.textContent = `${members.phoneNumber}`;
+        address.textContent = `${members.address}`;
+        memberlevel.textContent = `${members.membershipLevel}`;
+        website.textContent = `${members.websiteURL}`;
 
 
         logo.setAttribute('src', members.image);
@@ -39,12 +43,14 @@ const displayMembers = (members) => {
 
         
         card.appendChild(logo);
-        card.appendChild(phone);
-        card.appendChild(address);
-        card.appendChild(memberlevel);
-        card.appendChild(website);
+        card.appendChild(companyName);
+
+        detailCard.appendChild(phone);
+        detailCard.appendChild(address);
+        detailCard.appendChild(memberlevel);
+        detailCard.appendChild(website);
         
-        
+        card.appendChild(detailCard);
         cards.appendChild(card);
 
     });

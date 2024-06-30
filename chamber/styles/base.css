@@ -587,3 +587,50 @@ footer {
   cursor: pointer;
 
 }
+
+
+#cardsDirectory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  grid-gap: 2rem;
+}
+
+#cardsDirectory section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1em;
+  grid-gap: 1em;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color:#0C1F41;
+  margin: 0 auto;
+  width: 345px;
+  flex-direction: column;
+  padding: .5em;
+}
+
+#cardsDirectory section h2 {
+  color: white;
+}
+#cardsDirectory section section{
+
+padding: 0em;
+margin: 0em;
+background-color:white;
+}
+
+#cardsDirectory section section h5 {
+  color:#0C1F41;
+  padding: 0em;
+  margin: 0em;
+
+}
+
+#cardsDirectory img {
+  max-width: 320px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
