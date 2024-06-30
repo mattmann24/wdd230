@@ -1,0 +1,64 @@
+{
+    "members": [
+        {
+            "name": "Dragon Dojo",
+            "address": "1800 East 255 North, Vineyard UT 84059",
+            "phoneNumber": "1(800)555-8974",
+            "websiteURL":"https://www.DragonDojo.com",
+            "image": "./images/dragondojo.png",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Jack's Pest",
+            "address": "2500 NW Blvd, Vineyard UT 84059",
+            "phoneNumber": "1(800)555-8974",
+            "websiteURL":"https://www.jackspest.com.",
+            "image": "./images/JacksPest.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Mandi's Floral",
+            "address": "2600 NW Blvd, Vineyard UT 84059",
+            "phoneNumber": "1(800)555-8974",
+            "websiteURL":"https://www.mandisfloral.com",
+            "image": "./images/MandisFloral.png",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Elk Lodge",
+            "address": "1500 West 700 South, Vineyard UT 84059",
+            "phoneNumber": "1(800)555-8974",
+            "websiteURL":"https://www.vineyardelklodge.com",
+            "image": "./images/ElkLodge.png",
+            "membershipLevel": "Non Profit",
+            "advertisement": ""
+        },
+        {
+            "name": "Dawns Catering",
+            "address": "3200 West 600 South, Vineyard UT 84059",
+            "phoneNumber": "1(800)555-8974",
+            "websiteURL":"https://www.dawnscatering.com",
+            "image": "images/dawnsCatering.png",
+            "membershipLevel": "Gold",
+            "advertisement": ""
+        },
+        {
+            "name": "Vineyard Aquarium",
+            "address": "300 East 800 North, Vinyard UT 84059",
+            "phoneNumber": "1(800)555-8974",
+            "websiteURL":"https://www.vineyardaquarium.com",
+            "image": "images/VineyardAquarium.png",
+            "membershipLevel": "Bronze",
+            "advertisement": ""
+        },
+        {
+            "name": "Dire Delivery",
+            "address": "100 East 300 North, Vineyard UT 84059",
+            "phoneNumber": "1(800)555-8974",
+            "websiteURL":"https://www.diredelivery.com",
+            "image": "./images/DireDelivery.png",
+            "membershipLevel": "Gold"
+        }
+    ]
+
+}

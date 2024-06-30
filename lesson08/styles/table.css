@@ -1,0 +1,60 @@
+
+:root {
+	--back: hsla(150, 50%, 30%, 1);
+  --back2: hsla(150, 50%, 30%, .5);
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(150, 50%, 30%, 1);
+    font-size: .85rem;
+}
+
+#tableTitle {
+   background-color: rgb(78, 110, 88);
+   color: white;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+    
+}
+
+
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(234, 225, 225);
+}
+
+tr #column {
+    background-color: rgb(78, 110, 88, 85%);
+    color: white;
+}
+tr #row {
+    background-color: rgb(78, 110, 88, 85%);
+    color: white;
+}
