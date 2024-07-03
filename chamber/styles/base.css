@@ -40,7 +40,7 @@ nav{
   
 }
 
-#link a {
+.link a {
   text-decoration: none;
   list-style-type: none;
   font-size: 2rem;
@@ -53,7 +53,7 @@ nav{
   padding: 1rem;
 }
 
-#link a:hover{
+.link a:hover{
   text-decoration: none;
   list-style-type: none;
   background-color: #0C1F41;
