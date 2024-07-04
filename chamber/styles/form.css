@@ -59,7 +59,7 @@ input[type=text],
     
 
 }
-.wf1 input[type="textarea"] {
+.wf1 textarea {
 background-color: rgb(208, 207, 207);
 display: block;
 border: 1px #999;
