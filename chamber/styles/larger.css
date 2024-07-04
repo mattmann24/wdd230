@@ -7,18 +7,10 @@
   }
 
   .heroDiv {
-    display: grid;
-  }
-  .heroDiv img {
     grid-template-columns: 1/5;
+
   }
-  .heroTitle {
-    grid-template-rows: 2/3;
-    position: absolute;
-    float: center;
-    text-align: center;
-    color: rgb(249, 253, 236)
-  }
+
 
   #logo img{
     width: 90px;
@@ -29,20 +21,7 @@
   .weather {
     border-style:double;
   }
-  
-
-
-
-  
-    nav button {
-      display: grid;
-      grid-template-columns: 2/3;
-    }
-  
-    #social_media {
-        display: grid;
-        grid-template-columns: 2/3;
-    }
+ 
   
     nav #primary-nav {
       display: flex;
