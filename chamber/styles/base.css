@@ -582,6 +582,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
   grid-gap: 2rem;
+
 }
 
 #cardsDirectory section {
@@ -598,6 +599,7 @@ footer {
   width: 345px;
   flex-direction: column;
   padding: .5em;
+
 }
 
 #cardsDirectory section h2 {
@@ -621,5 +623,35 @@ background-color:white;
   max-width: 320px;
   margin-bottom: 5px;
   border-radius: 5px;
+}
+
+#listDirectory {
+  position: absolute;
+
+}
+
+#listDirectory ul {
+  Display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0%;
+  Margin: 0%;
+  background-color:#3e6fac;
+  border-style: outset;
+}
+
+#listDirectory h5, .directoryListp {
+  color: black;
+  background-color: aliceblue;
+  border-radius: 3px;
+  border-style: outset;
+  padding: .5em;
+  margin: .5em;
+  
+
+}
+
+.buttonMenu {
+  display: flex;
+  justify-content: center;
 }
 

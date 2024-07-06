@@ -23,6 +23,7 @@
 
     <script src="./scripts/chambergetdates.js" async></script>
     <script src="./scripts/members.js" defer></script>
+    <script src="./scripts/directoryGrid.js" defer></script>
     
 </head>
 
@@ -54,7 +55,13 @@
     </header>
 
     <main class="mainGridDirectory">
+        <div class="buttonMenu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div id="listDirectory"></div>
         <div id="cardsDirectory"></div>
+       
 
        
     </main>
@@ -62,9 +69,9 @@
     <footer id="footer">
         <div id="contactInfo">
                 <h4>*** Contact: Vineyard Chamber of Commerce ***</h4>
-                <p>
-                    Vineyard UT <br>
-                    84059<br>
+                <p id="footerP">
+                    Vineyard UT 84059<br>
+                    435-555-5555 <br>
                     VineyardCM@gmail.com <br><br>
                 </p>
         </div>
