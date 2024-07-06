@@ -8,28 +8,6 @@
         --orangeGreen: rgb(183, 243, 61);
     }
 
-    nav button {
-        display: none;
-    }
-
-    nav ul#primaryNav {
-        display: flex;
-        justify-content: center;
-        margin-left: 1vw;
-        border-left: 1px solid rgba(0, 0, 0, 0.3);
-    }
-
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-    }
-
-
-    #mainHero {
-        background-image: url('../images/medium.jpg');
-    }
-
-
     .description {
         margin-left: 10px;
         text-align: center;
@@ -127,6 +105,133 @@
         height: auto;
     
       }
+
+
+}
+
+#menu::before {
+    content: "☰";
+    display: flex;
+
+    
+    
+}
+
+#menu.open::before {
+    content: "❌";
+
+}
+
+.open .link ul{
+    display: block;
+}
+@media screen and (max-width: 1140px){
+    #mainDiscoverGrid {
+        display: block;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 845px){
+    .primaryNav { 
+        display: none; 
+    }
+
+    .primaryNav.open {
+        display: block;
+        background-color: #3e6fac;
+        border-style: none;
+
+    }
+    .link.open {
+        display: block;
+
+    }
+    .open.primaryNav .link {
+        display:block;
+        text-decoration: none;
+        grid-template-rows: auto;
+        justify-items: center;
+        list-style-type: none;
+        font-size: 25px;
+        right: 20px;
+        margin: 1rem;
+    
+        
+    }
+
+    .link a{
+        text-decoration: none;
+        text-align: center;
+        color: White;
+        background-color: #3e6fac;
+        border-radius: 5px;
+    
+        padding: .3rem;
+        margin: 3rem;
+
+    }
+    .link a:hover {
+        color: white;
+        background-color: #0C1F41;
+        padding: .3rem;
+        border-radius: 5px;
+        margin: 3em;
+
+    }
+    .primaryNav {
+        position: relative;
+        padding: .5rem;
+        text-align: center;
+        border-style: solid;
+        list-style-type: none;
+        text-decoration: none;
+        
+    }
+
+    #menu {
+        display: flex;
+        align-items: baseline;
+        align-self: end;
+        margin: 1rem;
+        max-width: 50px;
+        max-height: 50px;
+
+        
+    }
+    
+    .mainGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    #heroDiv{
+        display: none;
+    }
+    #event {
+        grid-row:1;
+    }
+    .weather {
+        grid-row:2;
+
+    }
+    #news{
+        grid-row:3;
+    
+    }
+    #spotlight1{
+        grid-row:4;
+
+    }
+
+    #spotlight2{
+        grid-row:5;
+    }
 
 
 }

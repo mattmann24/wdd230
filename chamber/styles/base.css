@@ -14,10 +14,7 @@
   max-width: 100%;
 }
 
-nav{
-  display: grid;
-  grid-column: 3/7;
-}
+
 
 .title {
   justify-self: center;
@@ -32,6 +29,8 @@ nav{
 
 
 .primaryNav {
+  display: grid;
+  grid-column: 3/7;
   background-color: #3e6fac;
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -375,9 +374,9 @@ footer {
 }
 #card2 img{
   height:300px;
-  width: auto;
+
   justify-self: center;
-  max-height: 100%;
+  max-width: 100%;
   grid-row:3;
   align-content: center;
   grid-column: 2;
@@ -653,5 +652,12 @@ background-color:white;
 .buttonMenu {
   display: flex;
   justify-content: center;
+  
 }
 
+#menu {
+  display: flex;
+  justify-content: center;
+	display: none; /* hide hamburger button */
+	
+}
