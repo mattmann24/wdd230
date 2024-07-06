@@ -27,10 +27,14 @@
   padding:.75rem;
 }
 
-
-.primaryNav {
+nav{
   display: grid;
   grid-column: 3/7;
+}
+
+
+.primaryNav {
+
   background-color: #3e6fac;
   display: grid;
   grid-template-columns: repeat(4,1fr);

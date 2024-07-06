@@ -140,6 +140,10 @@
         display: none; 
     }
 
+    nav {
+        display: none;
+    }
+
     .primaryNav.open {
         display: block;
         background-color: #3e6fac;
