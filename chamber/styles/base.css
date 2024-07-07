@@ -149,6 +149,26 @@ div #socialMedia img{
   
 }
 
+#joinUs{
+  background-color: #3e6fac;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 5px;
+  margin: .5em;
+  text-align: center;
+
+}
+#joinUs:hover {
+  background-color:#0C1F41;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 5px;
+  margin: .5em;
+  text-align: center;
+}
+
 #spotlight1 {
   display: grid;
   grid-row: 3; 
