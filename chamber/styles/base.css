@@ -114,6 +114,11 @@ div #socialMedia img{
 
 }
 
+#event p{
+  padding: .5em;
+}
+
+
 #weatherDiv {
   grid-row: 2; 
   
@@ -138,17 +143,19 @@ div #socialMedia img{
   border-radius: 6px;
   border-color: #0C1F41;
   border-width: 2px;
+  margin: 0%;
+  
   
 }
 
 #spotlight1 {
   display: grid;
   grid-row: 3; 
+  grid-column: 3;
   border-style: solid;
   border-radius: 6px;
   border-color: #0C1F41;
   border-width: 2px;
-
 }
 
 #spotlight2 {
@@ -162,16 +169,27 @@ div #socialMedia img{
 
 }
 
+#spotlight1 p, h4 {
+  margin: .5em;
+
+}
+#spotlight2 p, h4 {
+  margin: .5em;
+
+}
+
 #spotlight1 img{
   max-width: 100%;
   width: 300px;
   height: auto;
+  justify-self: center;
 }
 
 #spotlight2 img{
   max-width: 100%;
   width: 300px;
   height: auto;
+  justify-self: center;
 }
 
 #event {
@@ -188,39 +206,61 @@ div #socialMedia img{
   margin: 0%;
   border-radius: 6px;
   padding: .5em;
+  max-height: 25px;
 
 }
 
-.weather {
+#event p{
+  
+    padding: .5em;
 
+}
+
+.weatherDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 0%;
   padding: 0%;
 
 }
 
-.weather h2{
-  display: flex;
+.weatherDiv h2{
+  grid-row: 1;
+  grid-column: 1/3;
   background-color: #0C1F41;
   color: white;
   margin: 0%;
   border-radius: 6px;
   padding: .5em;
+  max-height: 25px;;
 
 }
 
-#news{
-
-  margin: 0%;
-  padding: 0%;
-
+.currentWeather {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 2em;
+ 
 }
+
+.forecast {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 2em;
+}
+
+
 
 #news h3{
-  display: flex;
   background-color: #0C1F41;
   color: white;
   margin: 0%;
   border-radius: 6px;
+  height: 25px;
+  padding: .5em;
+}
+
+#news p{
   padding: .5em;
 
 }

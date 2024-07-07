@@ -213,28 +213,28 @@
         grid-template-rows: auto;
 
     }
-
     #heroDiv{
-        display: none;
-    }
-    #event {
         grid-row:1;
     }
-    .weather {
+    
+    #event {
         grid-row:2;
+    }
+    .weather {
+        grid-row:3;
 
     }
     #news{
-        grid-row:3;
+        grid-row:4;
     
     }
     #spotlight1{
-        grid-row:4;
+        grid-row:5;
 
     }
 
     #spotlight2{
-        grid-row:5;
+        grid-row:6;
     }
 
 
