@@ -154,7 +154,6 @@
         padding: 1rem;
         align-self: start;
         text-align: center;
-        border-style: round;
         border-radius: 5px;
         color: rgb(255,255,255);
         margin: 0;
@@ -171,7 +170,6 @@
         grid-column: 1/3;
         background: rgb(220, 232, 224);
         padding: 1rem;
-        border-style: round;
         border-radius: 5px;
         box-shadow: 5px 3px 3px grey, -3px -3px grey;
         margin: .3em;
@@ -206,7 +204,6 @@
         background: rgb(220, 232, 224);
         grid-column: 3/4;
         padding: 1rem;
-        border-style: round;
         border-radius: 5px;
         box-shadow: 5px 3px 3px grey, -3px -3px grey;
         margin: .3em;
@@ -237,7 +234,6 @@
 
     .townMap {
         grid-column: 2;
-        border-style: round;
         border-radius: 5px;
         box-shadow: 5px 3px 3px grey, -3px -3px grey;
 

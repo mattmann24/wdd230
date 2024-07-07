@@ -125,6 +125,7 @@
 .open .link ul{
     display: block;
 }
+
 @media screen and (max-width: 1140px){
     #mainDiscoverGrid {
         display: block;
@@ -140,8 +141,14 @@
         display: none; 
     }
 
-    nav {
-        display: none;
+    .title {
+        justify-self: center;
+        grid-column: 2/4;
+    }
+
+    #logo {
+        grid-row: 2;
+
     }
 
     .primaryNav.open {
@@ -203,39 +210,16 @@
         margin: 1rem;
         max-width: 50px;
         max-height: 50px;
+        grid-column: 3;
+        grid-row:2;
+
 
         
     }
     
     .mainGrid{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-
-    }
-    #heroDiv{
-        grid-row:1;
-    }
+        display: block;
     
-    #event {
-        grid-row:2;
-    }
-    .weather {
-        grid-row:3;
 
     }
-    #news{
-        grid-row:4;
-    
-    }
-    #spotlight1{
-        grid-row:5;
-
-    }
-
-    #spotlight2{
-        grid-row:6;
-    }
-
-
 }

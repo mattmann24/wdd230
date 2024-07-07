@@ -5,10 +5,10 @@
   color: black;
   margin: 0;
   border-style: ridge;
-
+  max-width: 100%;
 }
 
-#logo img{
+#logo img {
   width: 90px;
   height: auto;
   max-width: 100%;
@@ -40,6 +40,7 @@ nav{
   grid-template-columns: repeat(4,1fr);
   align-content: center;
   list-style-type: none;
+  max-width: 100%;
   
 }
 
@@ -97,7 +98,7 @@ div #socialMedia img{
   grid-column: 1/4
   
 }
-#heroDiv img {
+#heroDiv picture img {
   max-width: 100%;
   justify-self: center;
 }
