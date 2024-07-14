@@ -1,0 +1,213 @@
+
+header {
+    background-color: #3d0905;
+}
+
+
+.mainHeader .primaryNav li, .primaryNav a {
+    color: #E6E5E4;
+    margin: 0%;
+    text-decoration: none;
+    list-style-type: none;
+
+
+}
+
+.mainHeader img {
+    height: auto;
+    width: 1000px;
+    max-width: 100%;
+    grid-column: 3/5
+}
+
+
+.primaryNav {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.primaryNav a {
+    margin:1rem;
+    border-bottom-style: groove;
+    border-radius: 7px;
+    padding: .5rem;
+
+}
+
+.primaryNav a:hover{ 
+    background-color: #E6E5E4;
+    color:#3d0905;
+    border-radius: 7px;
+    padding: .5rem;
+}
+
+.mainHeader {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+
+}
+
+#menu {
+    display: none; /* hide hamburger button */
+}
+
+#logo img {
+    height: auto;
+    width: 200px;
+    margin: 1rem;
+    max-width: 100%;
+
+}
+
+body {
+    background-color: #bcb9b8;
+}
+
+#heroImg img{
+    max-width: 100%;
+    width:fit-content;
+    height: auto;
+}
+
+h1 {
+    align-self: center;
+    color:#3d0905
+}
+
+#rentalCards {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.card {
+    background-color: #e6e5e4;
+    border-style: outset;
+    border-color:#3d0905;
+    border-radius: 7px;
+
+}
+
+.card h3 {
+    background-color: #3d0905;
+    color:#E6E5E4;
+    margin: 0%;
+    padding: .5rem;
+}
+
+#scooter img {
+    height: auto;
+    width: 150px;
+}
+
+#atv img {
+    height: auto;
+    width: 150px;
+}
+
+#jeep img {
+    height: auto;
+    width: 150px;
+}
+
+
+footer {
+    background-color: #E6E5E4;
+    color:#3d0905;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+}
+
+#socialMedia {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: flex-end;
+}
+.social-icons {
+    height: 50px;
+}
+
+#contactInfo, #cpInfo { 
+    justify-self:center;
+
+}
+
+.wf1 label {
+    display: block;
+    padding: 1rem;
+    color: #3d0905;
+    font-size: .9rem;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: #E6E5E4;
+
+}
+
+.wf1 legend {
+    color:#3d0905;
+    padding: 0 .5rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: #3d0905;
+    font-size: .9rem;
+
+}
+.wf1 input[type=text],
+.wf1 input[type=tel],
+.wf1 input[type=email],
+.wf1 input[type=date],
+.wf1 select,
+.wf1 input[type=number]{
+    background-color: rgb(208, 207, 207);
+    display: block;
+    border: 1px #494949;
+    border-style: dotted;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #434242;
+    width: 100%;
+    max-width: 400px;
+
+}
+.wf1 textarea {
+    background-color: rgb(208, 207, 207);
+    display: block;
+    border: 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #2d2c2c;
+    width: 100%;
+    max-width: 400px;
+    }
+
+.wf1 input[type=radio],
+.wf1 input[type=checkbox]{
+    margin-right: 6px;
+}
+
+.wf1 input[type=submit]{
+    border: none;
+    background-image: linear-gradient(#3d0905, #4f110d);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 1rem 2%;
+}
+
+.wf1 input:required {
+    border-left : solid 8px #3d0905;
+}
+.wf1 input:required:valid {
+    border-left : solid 8px #445ba9;
+}
