@@ -1,0 +1,48 @@
+{
+    "rentals": [
+        {
+            "type":"Scooter",
+            "model":"Honda Metropolitan",
+            "size":"49cc",
+            "limit": "1 person",
+            "image": "./images/tanScooter.jpg"
+
+        },
+        {
+            "type":"Scooter",
+            "model":"Honda Dio",
+            "size":"110cc",
+            "limit": "2 person",
+            "image": "./images/redScooter.jpg"
+
+        },
+        {
+            "type":"Scooter",
+            "model":"Honda PCX150",
+            "size":"149cc",
+            "limit": "2 person",
+            "image": "./images/silverScooter.jpg"
+
+        },
+        {
+            "type":"Side-By-Side ATV",
+            "model":"Honda Pioneer",
+            "limit": "4 person",
+            "image": "./images/atvRental.jpg"
+        },
+        {
+            "type":"Jeep",
+            "model":"Wrangler Manual 4 Door ",
+            "limit": "5 person",
+            "climatecontrol": "AC",
+            "image": "./images/jeepWranglerRental.jpg"
+        },
+        {
+            "type":"Jeep",
+            "model":"Wrangler Manual 2 Door ",
+            "limit": "4 person",
+            "climatecontrol": "Open Air",
+            "image": "./images/jeepOpenAir.jpg"
+        }
+    ]
+}
