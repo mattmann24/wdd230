@@ -33,15 +33,15 @@
         {
             "type":"Jeep",
             "model":"Wrangler Manual 4 Door ",
+            "size": "AC",
             "limit": "5 person",
-            "climatecontrol": "AC",
             "image": "./images/jeepWranglerRental.jpg"
         },
         {
             "type":"Jeep",
             "model":"Wrangler Manual 2 Door ",
+            "size": "Open Air",
             "limit": "4 person",
-            "climatecontrol": "Open Air",
             "image": "./images/jeepOpenAir.jpg"
         }
     ]

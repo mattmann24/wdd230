@@ -33,7 +33,7 @@ const displayRentals = (rentals) => {
 
 
         rentalImg.setAttribute('src', rentals.image);
-        rentalImg.setAttribute('alt', `Image of ${type} and/with ${size} ${climatecontrol} logo`);
+        rentalImg.setAttribute('alt', `Image of ${type} and/with ${size} logo`);
         rentalImg.setAttribute('loading', 'lazy');
         rentalImg.setAttribute('width', '300');
         rentalImg.setAttribute('height', 'auto');
@@ -44,7 +44,7 @@ const displayRentals = (rentals) => {
         detailCard.appendChild(model);
         detailCard.appendChild(size);
         detailCard.appendChild(limit);
-        detailCard.appendChild(climatecontrol);
+        
         
         card.appendChild(detailCard);
 
