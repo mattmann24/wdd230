@@ -1,12 +1,17 @@
 const baseUrl = "https://mattmann24.github.io/wdd230/scooter";
 const url ="https://mattmann24.github.io/wdd230/scooter/data/rental.json";
 
+const cards = document.querySelector('#rentalCards');
+const table = document.querySelector('#rentalInfo');
 
 async function getRentalsData() {
     const response = await fetch(url);
     const data = await response.json();
 
     displayRentals(data.rentals);
+    console.table(data.members);
+
+    displayTable(data.rentals);
 
 }
 
@@ -47,6 +52,38 @@ const displayRentals = (rentals) => {
         
         
         card.appendChild(detailCard);
+        cards.appendChild(card);
 
     });
 }
+const displayTable = (rentals) => {
+    rentals.forEach((rentals) => {
+        let tr = document.createElement('tr');
+        let th1body1 = document.createElement('th');
+        th1body1.setAttribute('id', 'row');
+        th1body1.setAttribute('scope', 'row');
+        let td1body2 = document.createElement('td');
+        let td1body3 = document.createElement('td');
+        let td1body4 = document.createElement('td');
+        let td1body5 = document.createElement('td');
+        let td1body6 = document.createElement('td');
+
+        th1body1.textContent= `${rentals.model}`
+        td1body2.textContent= `${rentals.limit}`
+        td1body3.textContent= `$${rentals.resHalfDay}`
+        td1body4.textContent= `$${rentals.resFullDay}`
+        td1body5.textContent= `$${rentals.halfDay}`
+        td1body6.textContent= `$${rentals.fullDay}`
+
+        tr.appendChild(th1body1);
+        tr.appendChild(td1body2);
+        tr.appendChild(td1body3);
+        tr.appendChild(td1body4);
+        tr.appendChild(td1body5);
+        tr.appendChild(td1body6);
+
+        table.appendChild(tr);
+
+    });
+}
+
