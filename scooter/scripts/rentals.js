@@ -1,14 +1,11 @@
 const baseUrl = "https://mattmann24.github.io/wdd230/scooter";
-const url ="https://mattmann24.github.io/wdd230/scooter/data/rentals.json";
+const url ="https://mattmann24.github.io/wdd230/scooter/data/rental.json";
 
-
-
-const cards = document.querySelector('#cardsDirectory');
 
 async function getRentalsData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.rentals);
+
     displayRentals(data.rentals);
 
 }
@@ -41,17 +38,15 @@ const displayRentals = (rentals) => {
         rentalImg.setAttribute('width', '300');
         rentalImg.setAttribute('height', 'auto');
 
-        
-        card.appendChild(rentalImg);
         card.appendChild(type);
-
+        card.appendChild(rentalImg);
+        
         detailCard.appendChild(model);
         detailCard.appendChild(size);
         detailCard.appendChild(limit);
         detailCard.appendChild(climatecontrol);
         
         card.appendChild(detailCard);
-        cards.appendChild(card);
 
     });
 }
