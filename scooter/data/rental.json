@@ -27,6 +27,7 @@
         {
             "type":"Side-By-Side ATV",
             "model":"Honda Pioneer",
+            "size":"700",
             "limit": "4 person",
             "image": "./images/atvRental.jpg"
         },
