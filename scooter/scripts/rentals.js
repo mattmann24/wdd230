@@ -1,5 +1,6 @@
-const baseUrl = "https://mattmann24.github.io/wdd230/";
-const url='https://mattmann24.github.io/wdd230/scooter/data/rentals.json';
+const baseUrl = "https://mattmann24.github.io/wdd230/scooter";
+const url ="https://mattmann24.github.io/wdd230/scooter/data/rentals.json";
+
 
 
 const cards = document.querySelector('#cardsDirectory');
@@ -8,7 +9,7 @@ async function getRentalsData() {
     const response = await fetch(url);
     const data = await response.json();
     console.table(data.rentals);
-    displayMembers(data.rentals);
+    displayRentals(data.rentals);
 
 }
 
