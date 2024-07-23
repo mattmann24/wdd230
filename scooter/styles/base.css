@@ -13,6 +13,8 @@ header {
 
 }
 
+
+
 .mainHeader img {
     height: auto;
     width: 1000px;
@@ -20,6 +22,18 @@ header {
     grid-column: 3/5
 }
 
+.banner{
+    background-color: #E6E5E4;
+    border-radius: 10px;
+
+}
+.bannerText {
+    padding: 1rem;
+    color:#3d0905;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 .primaryNav {
     display: grid;
@@ -96,6 +110,16 @@ body {
     color:#E6E5E4;
     margin: 0%;
     padding: .5rem;
+    max-height: 30px;
+}
+
+.card p {
+    padding: 1rem;
+    margin: 0%;
+}
+
+.cardInfo {
+    display: Flex;
 }
 
 #scooter img {
@@ -103,6 +127,8 @@ body {
     width: 150px;
     border-radius: 18px;
     padding: .7rem;
+    margin: 0%;
+    max-height: 100%
 }
 
 #atv img {
@@ -110,14 +136,16 @@ body {
     width: 150px;
     border-radius: 18px;
     padding: .7rem;
-    
+    max-height: 100%
 }
 
 #jeep img {
     height: auto;
-    width: 300px;
+    width: 250px;
     border-radius: 18px;
     padding: .7rem;
+    max-width: 100%;
+    max-height: 200px;
 }
 
 
@@ -443,4 +471,35 @@ tr #row {
 
 h2 {
     color:#3d0905;
+}
+/*weather */ 
+
+#weatherCard {
+    Display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+
+}
+
+#weatherCard h3{
+    grid-column: 1/3;
+}
+
+.dayCards{
+    padding: .5rem;
+    margin: .5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-style:outset;
+    border-radius: 7px;
+    
+}
+
+.dayCards h4,
+.dayCards h5,
+.dayCards p,
+.dayCards img{
+    margin: .5rem;
+    padding: .5rem;
 }
