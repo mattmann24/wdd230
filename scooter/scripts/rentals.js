@@ -9,8 +9,6 @@ async function getRentalsData() {
     const data = await response.json();
 
     displayRentals(data.rentals);
-    console.table(data.members);
-
     displayTable(data.rentals);
 
 }
