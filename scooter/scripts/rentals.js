@@ -43,6 +43,9 @@ const displayRentals = (rentals) => {
         rentalImg.setAttribute('width', '300');
         rentalImg.setAttribute('height', 'auto');
 
+        card.setAttribute('class', 'rentalCard');
+        detailCard.setAttribute('class', 'detailCard');
+
         card.appendChild(type);
         card.appendChild(rentalImg);
         

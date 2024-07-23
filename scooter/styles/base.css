@@ -70,10 +70,6 @@ body {
     height: auto;
 }
 
-h1 {
-    align-self: center;
-    color:#3d0905
-}
 
 #rentalCards {
     display: grid; 
@@ -210,4 +206,216 @@ footer {
 }
 .wf1 input:required:valid {
     border-left : solid 8px #445ba9;
+}
+
+.h1flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1flex h1 {
+    align-self: center;
+    
+}
+
+.title {
+    color:#3d0905
+}
+
+
+/* Table style info */
+
+table {
+	margin: 10px auto;
+	border-style: outset;
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: top;
+    color: #3d0905;
+    font-size: 2.5rem;
+}
+
+#tableTitle {
+   background-color: rgb(78, 110, 88);
+   color: white;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	
+	font-size: larger;
+   
+    border-bottom-style: solid;
+    border-color: #E6E5E4;
+}
+
+td {
+	text-align: center;
+    
+}
+
+
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(234, 225, 225);
+}
+
+tr #column {
+    background-color: #3d0905;
+    color: #E6E5E4;
+}
+tr #row {
+    background-color:#3d0905;
+    color: #E6E5E4;
+}
+
+/* rental card section */
+
+.rentalCard {
+    display: flex;
+    background-color: #E6E5E4;
+    border-radius: 7px;
+    border-style: outset;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.rentalCard h2 {
+    color:#3d0905;
+    background-color: #bcb9b8;
+    padding: 1rem;
+    margin: 0rem;
+    align-self: stretch;
+}
+.rentalCard img {
+    border-radius: 7px;
+    margin: .3rem;
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+}
+
+.detailCard {
+    border-style:outset;
+    border-radius: 7px;
+    border-style: outset;
+    border-color:#3d0905;
+    border-width: 1px;
+    background-color: #bcb9b8;
+
+}
+.detailCard h5 {
+    color:#3d0905;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    border-bottom-style: dashed;
+    border-color:#3d0905;
+}
+
+/* contact us */
+
+#contactForm  label {
+    display: block;
+    padding: 1rem;
+    color: #3d0905;
+    font-size: .9rem;
+}
+
+#contactForm  fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: #E6E5E4;
+
+}
+
+#contactForm  legend {
+    color:#3d0905;
+    padding: 0 .5rem;
+}
+
+#contactForm  div {
+    padding-top: 1rem;
+    color: #3d0905;
+    font-size: .9rem;
+
+}
+#contactForm  input[type=text],
+#contactForm  input[type=email],
+#contactForm  select{
+    background-color: rgb(208, 207, 207);
+    display: block;
+    border: 1px #494949;
+    border-style: dotted;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #434242;
+    width: 100%;
+    max-width: 400px;
+
+}
+#contactForm  textarea {
+    background-color: rgb(208, 207, 207);
+    display: block;
+    border: 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #2d2c2c;
+    width: 100%;
+    max-width: 400px;
+    }
+
+
+
+#contactForm  input[type=submit]{
+    border: none;
+    background-image: linear-gradient(#3d0905, #4f110d);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 1rem 2%;
+}
+
+#contactForm  input:required {
+    border-left : solid 8px #3d0905;
+}
+#contactForm  input:required:valid {
+    border-left : solid 8px #445ba9;
+}
+
+#contactBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    
+}
+
+#contactInfo {
+    padding: .5rem 2%;
+}
+
+#contactDetails {
+    background-color: #E6E5E4;
+    border-radius: 7px;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+h2 {
+    color:#3d0905;
 }
