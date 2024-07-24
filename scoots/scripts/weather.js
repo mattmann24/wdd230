@@ -22,7 +22,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            
             displayResult(data);
             
         }else {
@@ -37,7 +37,7 @@ async function apiFetchForcast() {
         const responseForcast = await fetch(urlForcast);
         if (responseForcast.ok) {
             const forcastData = await responseForcast.json();
-            console.log(forcastData);
+            
             tomorrowForcast(forcastData);
             
         }else {
@@ -154,7 +154,7 @@ async function tomorrowForcast(forcastData){
             };
         }
         while (forcastDate != dateTime);
-        console.log(forcastDate);
+        
         forcastTemperature = forcastData.list[i].main.temp;
         forcastRound = Math.round(forcastTemperature);
         
