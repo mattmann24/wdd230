@@ -1,5 +1,5 @@
-const baseUrl = "https://mattmann24.github.io/wdd230/scooter";
-const url ="https://mattmann24.github.io/wdd230/scooter/data/rental.json";
+const baseUrl = "https://mattmann24.github.io/wdd230/scoots";
+const url ="https://mattmann24.github.io/wdd230/scoots/data/rental.json";
 
 const cards = document.querySelector('#rentalCardsInfo');
 const table = document.querySelector('#rentalInfo');
