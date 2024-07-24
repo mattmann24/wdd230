@@ -191,7 +191,7 @@ footer {
     height: 50px;
 }
 
-#contactInfo, #cpInfo { 
+#contactInfoCard, #cpInfo { 
     justify-self:center;
 
 }
@@ -365,7 +365,7 @@ tbody tr:nth-child(odd) {
 	background-color: rgb(234, 225, 225);
 }
 
-tr #column {
+tr .column {
     background-color: #3d0905;
     color: #E6E5E4;
 }
@@ -501,7 +501,7 @@ tr #row {
     
 }
 
-#contactInfo {
+#contactInfoCard {
     padding: .5rem 2%;
 }
 
