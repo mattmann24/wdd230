@@ -13,18 +13,37 @@ header {
 
 }
 
+.buttonMenu {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+#menu {
+    display: flex;
+    justify-content: center;
+    display: none; /* hide hamburger button */
+      
+  }
+
+  #menu::before {
+    content: "☰";
+    display: flex;
+    
+}
 
 
 .mainHeader img {
     height: auto;
     width: 1000px;
     max-width: 100%;
-    grid-column: 3/5
+    grid-column: 3/5;
 }
 
 .banner{
     background-color: #E6E5E4;
     border-radius: 10px;
+    max-width: 100%;
 
 }
 .bannerText {
@@ -92,6 +111,12 @@ body {
 
 
 #rentalCards {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#rentalCardsInfo {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
@@ -248,6 +273,36 @@ footer {
 .wf1 input:required:valid {
     border-left : solid 8px #445ba9;
 }
+#callToAction{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#callToLink {
+    background-color: #bcb9b8;
+    color:#3d0905;
+    border-radius: 7px;
+    text-decoration: none;
+    list-style-type: none;
+    margin:.5rem;
+    
+
+}
+#callToAction h4{
+    padding: 1rem;
+    margin:0%;
+}
+
+#businessInfo {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.businessInfoDiv {
+    padding-left:2rem;
+    padding-right: 2rem;
+}
+
 
 .h1flex {
     display: flex;
@@ -378,6 +433,8 @@ tr #row {
     border-radius: 6px;
     padding: .5rem 2%;
     background-color: #E6E5E4;
+    max-width: 100%;
+    height:auto;
 
 }
 
@@ -456,6 +513,22 @@ tr #row {
     text-align: center;
 
 }
+#maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+   
+  }
+#map {
+    padding: 2rem;
+    padding-right: 4.5rem;
+    padding-left:4.5rem;
+    background-color: #E6E5E4;
+    border-radius: 7px;
+    max-width: 100%;
+}
+
 #supportImg {
     display: flex;
     flex-direction: column;

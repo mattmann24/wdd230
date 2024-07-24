@@ -13,9 +13,9 @@ const tomorrowTitle = document.querySelector('#tomorrowTitle');
 const tomorrowMainTitle = document.querySelector('#tomorrowMainTitle');
 
 
-
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.44165743237060&lon=-86.9195863139801&units=imperial&appid=54df2e2c323acaf99ee1cee513fc00bc'
-const urlForcast = "https://api.openweathermap.org/data/2.5/forecast?lat=20.441657432370608&lon=-86.9195863139801&units=imperial&appid=54df2e2c323acaf99ee1cee513fc00bc"
+/*const urlOneCall = 'https://api.openweathermap.org/data/2.5/onecall?lat=20.441657432370608&lon=-86.9195863139801&cnt=2&units=imperial&appid=54df2e2c323acaf99ee1cee513fc00bc'*/
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.44165743237060&lon=-86.9195863139801&units=imperial&appid=54df2e2c323acaf99ee1cee513fc00bc';
+const urlForcast = "https://api.openweathermap.org/data/2.5/forecast?lat=20.441657432370608&lon=-86.9195863139801&units=imperial&appid=54df2e2c323acaf99ee1cee513fc00bc";
 
 async function apiFetch() {
     try {
@@ -46,6 +46,7 @@ async function apiFetchForcast() {
     }catch (error) {
         console.log(error);
     }
+    
 }
 
 async function displayResult(data) {
@@ -65,9 +66,9 @@ async function displayResult(data) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     weatherTitle.textContent = `${desc}`;
-    currentTemp.innerHTML = `Temperature ${weatherRound} &deg;F `;
+    currentTemp.innerHTML = `Temperature ${weatherRound}&deg;F `;
     mainTitle.textContent = `${title}`
-    maxTemp.innerHTML = `${maxTempRound} &deg;F `;
+    maxTemp.innerHTML = `${maxTempRound}&deg;F `;
 
 
 }
@@ -76,36 +77,109 @@ apiFetch();
 apiFetchForcast();
 
 
+
 async function tomorrowForcast(forcastData){
-
-    forcastTemp = forcastData.list[7].main.temp;
-
-    forcastRound = Math.round(forcastTemp);
-  
-   
-    forcastHumid = forcastData.list[7].main.humidity;
-
-    const iconsrc1 = `https://openweathermap.org/img/w/${forcastData.list[7].weather[0].icon}.png`;
-    let forcastDesc1 = forcastData.list[7].weather[0].description;
-    tomorrowIcon.setAttribute('src', iconsrc1);
-    tomorrowIcon.setAttribute('alt', forcastDesc1);
-    tomorrowMainTitleData = forcastData.list[7].weather[0].main;
-
-    tomorrowTitle.textContent = `${forcastDesc1}`;
-    tomorrowTemp.innerHTML = `Temperature: ${forcastRound} &deg;F `;
-    tomorrowHumid.textContent = `Humidity: ${forcastHumid}%`;
-    tomorrowMainTitle.textContent = `${tomorrowMainTitleData}`;
-    const dateStr1 = forcastData.list[7].dt_txt;
-    const day1 = getDayName(dateStr1, "en-US");
-    forcastDay1.innerHTML = day1;
     
+
+    try{
+        let dateobj = new Date();
+        let monthobj = new Date();
+        let yearobj = new Date();
+        let date = dateobj.getDate();
+        let month = monthobj.getMonth();
+        let year = yearobj.getFullYear();
+        month = month + 1 ; /*Correcting the array starting from 0*/
+        if(month < 10 ){
+            month = `0${month}`
+        }
+        
+
+        let tomorrow = date + 1;
+        if (month == 1 && tomorrow > 31){
+            tomorrow = 1;
+        }
+        else if (month == 3 && tomorrow > 31){
+        tomorrow = 1;
+        }
+        else if (month == 6 && tomorrow > 31){
+            tomorrow = 1;
+        }
+        else if (month == 7 && tomorrow > 31){
+            tomorrow = 1;
+        }
+        else if (month == 8 && tomorrow > 31){
+            tomorrow = 1;
+        }
+        else if (month == 10 && tomorrow > 31){
+            tomorrow = 1;
+        }
+        else if (month == 12 && tomorrow > 31){
+            tomorrow = 1;
+        }
+        else if (month == 2 && tomorrow > 28){
+            tomorrow = 1;
+        }
+        else if ( month == 4 && tomorrow>30){
+            tomorrow = 1;
+        }
+        else if (month == 6 && tomorrow > 30){
+            tomorrow = 1;
+        }
+        else if (month == 9 && tomorrow > 30){
+            tomorrow = 1;
+        }
+        else if (month == 11 && tomorrow > 30){
+            tomorrow = 1;
+        }
+        
+        
+    
+        let dateTime = `${year}-${month}-${tomorrow} 15:00:00`;
+        
+        let  i = 0;
+
+        let forcastDate = forcastData.list[i].dt_txt;
+        
+        do {
+            if (forcastDate == dateTime){
+
+
+            }
+            else {
+                i++;
+              
+                forcastDate = forcastData.list[i].dt_txt;
+            
+
+            };
+        }
+        while (forcastDate != dateTime);
+        console.log(forcastDate);
+        forcastTemperature = forcastData.list[i].main.temp;
+        forcastRound = Math.round(forcastTemperature);
+        
+        
+        forcastHumid = forcastData.list[i].main.humidity;
+        const iconsrc1 = `https://openweathermap.org/img/w/${forcastData.list[i].weather[0].icon}.png`;
+        let forcastDesc1 = forcastData.list[i].weather[0].description;
+        tomorrowIcon.setAttribute('src', iconsrc1);
+        tomorrowIcon.setAttribute('alt', forcastDesc1);
+        tomorrowMainTitleData = forcastData.list[i].weather[0].main;
+        
+        tomorrowTitle.textContent = `${forcastDesc1}`;
+        tomorrowTemp.innerHTML = `Temperature: ${forcastRound}&deg;F `;
+        tomorrowHumid.textContent = `Humidity: ${forcastHumid}%`;
+        tomorrowMainTitle.textContent = `${tomorrowMainTitleData}`;
+        
+    }catch (error){
+        console.log(error);
     }
 
+    
+}
 
 
-    function getDayName(dateStr, locale) {
-        var date = new Date(dateStr);
-        return date.toLocaleDateString(locale, { weekday: 'short' });        
-    }
-
-
+function getDayName(dateStr, locale) {
+    var date = new Date(dateStr);
+    return date.toLocaleDateString(locale, { weekday: 'short' });        
+}

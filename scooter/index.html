@@ -17,10 +17,10 @@
 
 
 <link rel="stylesheet" href="./styles/larger.css"> 
-<link rel="stylesheet" href="./styles/medium.css"> 
 <link rel="stylesheet" href="./styles/base.css"> 
+<link rel="stylesheet" href="./styles/medium.css"> 
 
-<script src="./scripts/menuButton.js" async></script>
+<script src="./scripts/menubutton.js" async></script>
 <script src="./scripts/getdates.js" async></script>
 <script src="./scripts/weather.js" async></script>
 <script src="./scripts/bannermessage.js" async></script>
@@ -31,7 +31,7 @@
         <div class="bannerContent">
             <div class="bannerText">
                 <strong>Today's Max Tempature: </strong> <span id="maxTemp"> </span>
-                <p id="weatherMessage">   Don't forget Water and Sunscreen!!</p>
+                <p id="weatherMessage">Don't forget Water and Sunscreen!!</p>
                 <button class="bannerClose" type="button">Ⅹ</button>
 
             </div>
@@ -99,7 +99,7 @@
                 <h3>
                     Jeep Wrangler
                 </h3>
-                <div class="cardInfo">
+                <div id="mainJeepCard" class="cardInfo">
                     <img src="./images/jeepWrangler.jpg" alt="Jeep Wrangler Image">
                     <p>Our Jeep rental service is avaible for a more erganomic and conformable expirence. The Jeep is a powerful offroad vehicle that 
                         give you similar freedoms as the ATV. The bonus of the Jeep rental includes more passenages (up to 4, 5 including the driver) 
@@ -107,19 +107,29 @@
                     </p>
                 </div> 
             </section>
-            <section id="callToAction" class="card">
+            <section id="call" class="card">
                 <h3>Make a Reservation Today!</h3>
-                <a href="./reservations.html">Click Here! 🛵</a>
-                <p>Expore the Island your own way!</p>
-                <div id="homeContact">
-                    <h4>Contact us for questions</h4>
-                    <p>We want to hear from you! Please use our contact information or fill out the form to leave a comment, question or concern.</p>
-                    <p>We take pride in responding to each response we receive. We look forward to hearing from you and improving our business!</p>
-                    <h4>Scoots Support</h4>
-                    <h4>+52 555-726-687</h4>
-                    <h4>Scoots@gmail.com</h4>
+                <div id="callToAction">
+                    <a id="callToLink" href="./reservations.html">Click Here! 🛵</a>
+                    <p>Expore the Island your own way!</p>
+                    <div id="homeContact">
+                        <h4>Contact us for questions</h4>
+                        <p>We want to hear from you! Please use our contact information or fill out the form to leave a comment, question or concern.</p>
+                        <p>We take pride in responding to each response we receive. We look forward to hearing from you and improving our business!</p>
+                         <div id="businessInfo">
+                            <div class="businessInfoDiv"id="contactDiv"> 
+                                <h4>Scoots Support</h4>
+                                <h4>+52 555-726-687</h4>
+                                <h4>Scoots@gmail.com</h4>
+                            </div>
+                            <div class="businessInfoDiv" id="contactDiv"> 
+                                <h4>Scoots Address</h4>
+                                <h4>100 Best Scoots Blvd,</h4>
+                                <h4>77668 Cozumel, Q.R., Mexico</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </section>
         
 
@@ -150,11 +160,14 @@
 
                 </section>
 
-                <section class="card" id="sunSet">
 
-                </section>
 
             </div>
+            <section class="card" id="sunSet">
+                <h3>Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16875.666232816202!2d-86.9596628299032!3d20.50706850533857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59005b7712e9%3A0xa7c6c661d4da6dbc!2sScoots%20(Store%201)!5e0!3m2!1sen!2sus!4v1721801286391!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </section>
         </div>
     </div>
 </main>
