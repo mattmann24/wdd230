@@ -1,0 +1,36 @@
+@media only screen and (min-width: 64rem) {
+
+
+
+  .primaryNav {
+    background-color: #3e6fac;
+  }
+
+
+
+  #logo img{
+    width: 90px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .weather {
+    border-style:double;
+  }
+ 
+  
+    nav #primary-nav {
+      display: flex;
+      margin-left: 500px;
+      margin-top: -60px;
+    }
+
+    
+
+    #event h2{
+      background-color: #0C1F41;
+      color: white;
+
+    }
+  
+}

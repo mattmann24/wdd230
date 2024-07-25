@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Matthew Shank">
+<meta name="description" content="Scoots home page for attracting customers">
+<title>Scoots | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="./images/scootslogo.ico">
+
+<meta property="og:title" content="Scoots" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mattmann24.github.io/wdd230/scoots" />
+<meta property="og:image" content="https://mattmann24.github.io/wdd230/scoots/images/scootslogo.png" />
+
+
+
+<link rel="stylesheet" href="./styles/larger.css"> 
+<link rel="stylesheet" href="./styles/base.css"> 
+<link rel="stylesheet" href="./styles/medium.css"> 
+
+<script src="./scripts/menubutton.js" async></script>
+<script src="./scripts/getdates.js" async></script>
+<script src="./scripts/weather.js" async></script>
+<script src="./scripts/bannermessage.js" async></script>
+
+</head>
+<body>
+    <div class="banner">
+        <div class="bannerContent">
+            <div class="bannerText">
+                <strong>Today's Max Tempature: </strong> <span id="maxTemp"> </span>
+                <p id="weatherMessage">Don't forget to bring Water and Sunscreen!!</p>
+                <button class="bannerClose" type="button">Ⅹ</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <header class="clearfix">
+        <div class="mainHeader">
+            <div id="logo">
+                <img src="./images/scootslogo.png" alt="Scoots logo"> 
+            </div>
+            
+                    
+            <button id="menu"></button>
+            <ul class="primaryNav">
+                <li class="link"><a href="./index.html">Home</a></li>
+                <li class="link"><a href="./rentals.html">Rentals</a></li>
+                <li class="link"><a href="./reservations.html">Reservations</a></li>
+                <li class="link"><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <img src="./images/scootsheader.png" alt="Scoots">
+            
+ 
+                    
+            </div>
+    </header>
+
+    
+<main>
+    <div class="mainDiv">
+        
+        <div id="heroImg">
+            <img src="./images/heroimg.jpg" alt="hero image ">
+        </div>
+        <div class="h1flex">
+            <h1 class="title">Scoots</h1>
+        </div>
+        <div id="rentalCards">
+            <section id="scooter" class="card">
+                <h3>
+                    Classic Scooters
+                </h3>
+                <div class="cardInfo"> 
+                    <img src="./images/silverscooter.jpg" alt="scooter Image">
+                    <p>Our most popular option! Our scooters are a fun economic way to see our beautiful island. 
+                        You will experience adventure in one of the most freeing forms. We have both single rider for independance, or double rider options for a 
+                        romantic get away.</p>
+                </div> 
+            </section>
+
+            <section id="atv" class="card">
+                <h3>
+                    4x4 ATV
+                </h3>
+                <div class="cardInfo">
+                    <img src="./images/atv.jpg" alt="Atv Image">
+                    <p>If you are looking to explore more of our unpaved sights, the 4x4 ATV is for you! This option provides a save
+                        and adventurous expirence. You can travel on and offroad, even visit our beautiful beaches!
+                    </p>
+                </div> 
+            </section>
+
+            <section id="jeep" class="card" >
+                <h3>
+                    Jeep Wrangler
+                </h3>
+                <div id="mainJeepCard" class="cardInfo">
+                    <img src="./images/jeepwrangler.jpg" alt="Jeep Wrangler Image">
+                    <p>Our Jeep rental service is avaible for a more ergonomic and comfortable expirence. The Jeep is a powerful offroad vehicle that 
+                        gives you similar freedoms to the ATV. The bonus of the Jeep rental includes more passenages (up to 4, 5 including the driver) 
+                        and an AC or open air climate control!
+                    </p>
+                </div> 
+            </section>
+            <section id="call" class="card">
+                <h3>Make a Reservation Today!</h3>
+                <div id="callToAction">
+                    <a id="callToLink" href="./reservations.html">🛵 Click Here For Aventure!! 🛵</a>
+                    <p>Explore Cozumel Island your own way!</p>
+                    <div id="homeContact">
+                        <h4>Contact us for questions</h4>
+                        <p>We want to hear from you! Please use our contact information or fill out the form on our Contact Us page to leave a comment, question, or concern.</p>
+                        <p>We take pride in responding to each submission we receive. We look forward to hearing from you and improving our business!</p>
+                         <div id="businessInfo">
+                            <div class="businessInfoDiv" id="contactDiv"> 
+                                <h4>Scoots Support</h4>
+                                <h4>+52 555-726-687</h4>
+                                <h4>Scoots@gmail.com</h4>
+                            </div>
+                            <div class="businessInfoDiv" id="addressDiv"> 
+                                <h4>Scoots Address</h4>
+                                <h4>100 Best Scoots Blvd,</h4>
+                                <h4>77668 Cozumel, Q.R., Mexico</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+
+            <div id="islandInfo">
+                    
+                <section class="card" id="weatherCard">
+                    <h3> Weather Forcast</h3>
+                    <div class="dayCards" id="todayWeather">
+                        <h4> Today</h4>
+                        <p id="currentTemp">current Temp</p>
+                        <p id="currentHumid">Humid</p>
+                        <h5 id="mainTitle"></h5>
+                        <p id="weatherTitle"></p> 
+                        <img id="weatherIcon" src="./images/weather.png" alt="placeholder">
+                        
+                    </div>
+
+                    <div  class="dayCards" id="tomorrowWeather">
+                        <h4> Tomorrow </h4>
+                        <p id="tomorrowTemp">Hot</p>
+                        <p id="tomorrowHumid">Humid</p>
+                        <h5 id="tomorrowMainTitle"></h5>
+                        <p id="tomorrowTitle"></p>  
+                        <img id="tomorrowIcon" src="./images/weather.png" alt="placeholder">
+                       
+                    </div>
+
+
+                </section>
+
+
+
+            </div>
+            <section class="card" id="sunSet">
+                <h3>Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16875.666232816202!2d-86.9596628299032!3d20.50706850533857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59005b7712e9%3A0xa7c6c661d4da6dbc!2sScoots%20(Store%201)!5e0!3m2!1sen!2sus!4v1721801286391!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </section>
+        </div>
+    </div>
+</main>
+
+</body>
+
+<footer>
+    <div id="contactInfo">
+        <h4>* Contact Us: Scoots*</h4>
+        <p id="footerP" >
+            Cozumel Mexico <br>
+            +52 929 564 7756
+            84059<br>
+            Scoots@gmail.com <br><br>
+        </p>
+    </div>
+
+    <div id="cpInfo">
+        <p id="subFooter">
+        &copy; <span id="copy-year"></span> Matthew Shank | WDD 230 | Scoot's Final Project | Last Updated: <span id="last-modified"></span>
+        </p>
+    </div>
+    <div id="socialMedia">
+        <a href="https://www.facebook.com/"><img class="social-icons" src="images/fb_icon.webp" alt="facebook"></a>
+        <a href="https://www.youtube.com/"><img class="social-icons" src="images/youtube_icon.png" alt="youtube"></a>
+        <a href="https://www.twitter.com/"><img class="social-icons" src="images/twitter_icon.webp" alt="twitter"></a>
+
+    </div>
+
+
+</footer>

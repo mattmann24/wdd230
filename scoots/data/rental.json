@@ -1,0 +1,73 @@
+{
+    "rentals": [
+        {
+            "type":"Scooter",
+            "model":"Honda Metropolitan",
+            "size":"49cc",
+            "limit": "1 person",
+            "image": "./images/tanscooter.jpg",
+            "resHalfDay":"20",
+            "resFullDay":"30",
+            "halfDay":"25",
+            "fullDay":"35"
+
+        },
+        {
+            "type":"Scooter",
+            "model":"Honda Dio",
+            "size":"110cc",
+            "limit": "2 people",
+            "image": "./images/redscooter.jpg",
+            "resHalfDay":"30",
+            "resFullDay":"40",
+            "halfDay":"35",
+            "fullDay":"45"
+
+        },
+        {
+            "type":"Scooter",
+            "model":"Honda PCX150",
+            "size":"149cc",
+            "limit": "2 people",
+            "image": "./images/silverscooter.jpg",
+            "resHalfDay":"40",
+            "resFullDay":"50",
+            "halfDay":"45",
+            "fullDay":"55"
+
+        },
+        {
+            "type":"Side-By-Side ATV",
+            "model":"Honda Pioneer",
+            "size":"700",
+            "limit": "4 people",
+            "image": "./images/atvrental.jpg",
+            "resHalfDay":"50",
+            "resFullDay":"70",
+            "halfDay":"60",
+            "fullDay":"80"
+        },
+        {
+            "type":"Jeep",
+            "model":"Wrangler Manual 4 Door ",
+            "size": "AC",
+            "limit": "5 people",
+            "image": "./images/jeepwranglerrental.jpg",
+            "resHalfDay":"70",
+            "resFullDay":"100",
+            "halfDay":"85",
+            "fullDay":"125"
+        },
+        {
+            "type":"Jeep",
+            "model":"Wrangler Manual 2 Door ",
+            "size": "Open Air",
+            "limit": "4 people",
+            "image": "./images/jeepopenair.jpg",
+            "resHalfDay":"60",
+            "resFullDay":"85",
+            "halfDay":"70",
+            "fullDay":"90"
+        }
+    ]
+}

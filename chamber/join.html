@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Join page for new memebers, join the Vineyard Chamber of Commerce">
+    <title>The Join page of the Vineyard Chamber of Commerce </title>
+    <link rel="icon" href="./images/ChamberLogo.ico">
+    <script src="./scripts/chambergetdates.js" async></script> 
+    <meta name="author" content="Matthew Shank">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css" >
+    <link rel="stylesheet" href="./styles/larger.css" >
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel='icon' href="./images/design-null.svg">
+
+    <meta property="og:title" content="Vineyard Chamber of Commerce Join Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mattmann24.github.io/wdd230/chamber" />
+    <meta property="og:image" content="https://u.realgeeks.media/utahrealtygroup/vineyard-utah-1.jpg" />
+
+    <script src="./scripts/chambergetdates.js" async></script>
+    <script src="./scripts/menuButton.js" async></script>
+
+</head>
+
+
+
+<body>
+    <header class="clearfix">
+        <div class="mainHeader">
+            <div id="logo">
+                <img src="./images/design-null.png" alt="VCC logo"> 
+            </div>
+                <h1 class="title">Vineyard Chamber of Commerce</h1>
+                    
+                <button id="menu"></button>
+                <nav>
+                    <ul class="primaryNav">
+                        <li class="link"><a href="index.html">Home</a></li>
+                        <li class="link"><a href="discover.html">Discover</a></li>
+                        <li class="link"><a href="directory.html">Directory</a></li>
+                        <li class="link"><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+                <div id="socialMedia">
+                    <a href="https://www.facebook.com/"><img class="social-icons" src="images/fb_icon.webp" alt="facebook"></a>
+                    <a href="https://www.youtube.com/"><img class="social-icons" src="images/youtube_icon.png" alt="youtube"></a>
+                    <a href="https://www.twitter.com/"><img class="social-icons" src="images/Twitter_Icon.webp" alt="twitter"></a>
+
+                </div>
+                    
+                    
+            </div>
+    </header>
+
+    <h2> Join Vineyard Chamber of Commerce!</h2>
+    <div id="mainFormDiv">
+        <div id="formDiv">
+
+            <form method="get" action="thankyou.html" class="wf1">
+                <fieldset id="joinUsField">
+                    <legend>Applicant Information</legend>
+                    <label>First Name* <input id='firstName' type="text" name="firstName" required></label>
+                    <label>Last Name* <input id='lastName' type="text" name="lastName" required></label>
+                    <label>Current Possition/Title <input id='iitle' type="text" name="title" pattern="[A-Za-z]{7}"></label>
+                    <label>Email* <input id='email' type="email" name="email" placeholder="example@gmail.com" title="A valid email address." pattern="[a-zA-Z0-9_.\-]+@+[a-zA-Z0-9_.\-]+.com"  required></label> 
+                    <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label>Company/Organization Name* <input id='companyName' type="text" name="companyName" required></label>
+
+                    <div class="membershipLevel">
+                    <h3> Membership Level</h3>
+                    <label><input type="radio" name="memberLevel" value="noneProfit">None Profit</label>
+                    <label><input type="radio" name="memberLevel" value="bronze">Bronze</label>
+                    <label><input type="radio" name="memberLevel" value="Silver">Silver</label>
+                    <label><input type="radio" name="memberLevel" value="Gold">Gold</label>
+                    </div>
+                    <label>Company/Organization Description <textarea id="description" name="companyDesc" rows="5"></textarea></label>
+
+                    <label><input type="hidden" name="timestamp" id="timestamp" value=""></label>
+                
+                
+                </fieldset>
+            
+                <fieldset id="joinUsSubmit">
+                    <input type="submit" value="Join our Chamber">
+                </fieldset>
+
+            </form>
+    </div>
+<div id="memberInfo">
+    <section >
+        <h2 id="memberProgram">Membership Program</h2>
+        <p>We are pleased to present you with our Chamber of Commerce Membership Program, designed to provide value and benefits tailored to your organization's needs. Our program offers four tiers: Non-Profit, Bronze, Silver, and Gold. Each level comes with increasing costs and a range of benefits to help your business thrive. Here's an overview of what each tier offers:</p>
+
+    </section>
+    <section >
+        <h2>Non-Profit</h2>
+        <h5>Cost: Free Access</h5>
+        <ul>
+            <li>Access to networking events and business mixers</li>
+            <li>Listing in the Chamber's online directory</li>
+            <li>Opportunities to collaborate with other non-profit organizations</li>
+            <li>Discounted rates for Chamber-sponsored training programs</li>
+        </ul>
+
+    </section>
+        
+    <section>
+        <h2>Bronze</h2>
+        <h5>Cost: $100 Annually</h5>
+        <ul>
+            <li>Exclusive invitations to Chamber luncheons and seminars</li>
+            <li>Spotlight position on the Chamber's home page for one month per year</li>
+            <li>Complimentary booth space at select Chamber events</li>
+            <li>Access to member-only resources and business tools</li>
+        </ul>
+
+
+        
+    </section>
+
+    <section>
+        <h2>Silver</h2>
+        <h5>Cost: $250 Annually</h5>
+        <ul>
+            <li>Priority registration and discounted rates for Chamber-sponsored training programs</li>
+            <li>Enhanced advertising opportunities on the Chamber's website and social media platforms</li>
+            <li>Recognition as a Silver Member in Chamber publications</li>
+            <li>Access to industry-specific workshops and roundtable discussions</li>
+        </ul>
+
+
+        
+    </section>
+
+    <section>
+        <h2>Gold</h2>
+        <h5>Cost: $400 Annually</h5>
+        <ul>
+            <li>VIP access to exclusive Chamber events and high-level networking opportunities</li>
+            <li>Featured spotlight position on the Chamber's home page for two months per year</li>
+            <li>Customized promotional opportunities in Chamber newsletters and email campaigns</li>
+            <li>Recognition as a Gold Member in Chamber press releases and promotional materials</li>
+        </ul>
+
+
+        
+    </section>
+
+</div>
+
+
+</div>
+
+    <footer id="footer">
+        <div id="contactInfo">
+                <h4>*** Contact: Vineyard Chamber of Commerce ***</h4>
+                <p id="footerP" >
+                    Vineyard UT <br>
+                    84059<br>
+                    VineyardCM@gmail.com <br><br>
+                </p>
+        </div>
+        
+        <div id="cpInfo">
+        <p id="subFooter">
+            &copy; <span id="copy-year"></span> Matthew Shank | WDD 230 | Chamber Project | Last Updated: <span id="last-modified"></span>
+        </p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('timestamp').value = new Date.now().toISOString();
+    </script>
+
+</body>
+
+</html>

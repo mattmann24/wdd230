@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Directory of business members of the Vineyard Chamber of Commerce">
+    <title>Directory of Members for the Vineyard Chamber of Commerce</title>
+    <link rel="icon" href="./images/ChamberLogo.ico">
+    <script src="./scripts/chambergetdates.js" async></script> 
+    <meta name="author" content="Matthew Shank">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel='icon' href="./images/design-null.svg">
+
+    <meta property="og:title" content="Vineyard Chamber of Commerce Member Directory " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mattmann24.github.io/wdd230/chamber" />
+    <meta property="og:image" content="https://u.realgeeks.media/utahrealtygroup/vineyard-utah-1.jpg" />
+
+    <script src="./scripts/chambergetdates.js" async></script>
+    <script src="./scripts/members.js" defer></script>
+    <script src="./scripts/menuButton.js" async></script>
+    
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="mainHeader">
+            <div id="logo">
+                <img src="./images/design-null.png" alt="VCC logo"> 
+            </div>
+                <h1 class="title">Vineyard Chamber of Commerce</h1>
+                    
+                <button id="menu"></button>
+                <nav>
+                    <ul class="primaryNav">
+                        <li class="link"><a href="index.html">Home</a></li>
+                        <li class="link"><a href="discover.html">Discover</a></li>
+                        <li class="link"><a href="directory.html">Directory</a></li>
+                        <li class="link"><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+                <div id="socialMedia">
+                    <a href="https://www.facebook.com/"><img class="social-icons" src="images/fb_icon.webp" alt="facebook"></a>
+                    <a href="https://www.youtube.com/"><img class="social-icons" src="images/youtube_icon.png" alt="youtube"></a>
+                    <a href="https://www.twitter.com/"><img class="social-icons" src="images/Twitter_Icon.webp" alt="twitter"></a>
+
+                </div>
+                    
+                    
+            </div>
+    </header>
+
+    <main class="mainGridDirectory">
+        <div class="buttonMenu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div id="listDirectory"></div>
+        <div id="cardsDirectory"></div>
+       
+
+       
+    </main>
+
+    <footer id="footer">
+        <div id="contactInfo">
+                <h4>*** Contact: Vineyard Chamber of Commerce ***</h4>
+                <p id="footerP">
+                    Vineyard UT 84059<br>
+                    435-555-5555 <br>
+                    VineyardCM@gmail.com <br><br>
+                </p>
+        </div>
+        
+        <div id="cpInfo">
+        <p id="subFooter">
+            &copy; <span id="copy-year"></span> Matthew Shank | WDD 230 | Chamber Project | Last Updated: <span id="last-modified"></span>
+        </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

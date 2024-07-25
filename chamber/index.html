@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home page for the Vineyard Chamber of Commerce">
+    <title >Home page of the Vineyard Chamber of Commerce</title>
+    <link rel="icon" href="./images/ChamberLogo.ico"/>
+    <script src="./scripts/chambergetdates.js" async></script> 
+    <meta name="author" content="Matthew Shank"/>
+    <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css"/>
+    <link rel='icon' href="./images/design-null.svg">
+
+    <meta property="og:title" content="Vineyard Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mattmann24.github.io/wdd230/chamber" />
+    <meta property="og:image" content="https://u.realgeeks.media/utahrealtygroup/vineyard-utah-1.jpg" />
+
+    <script src="./scripts/chambergetdates.js" async></script>
+    <script src="./scripts/weather.js" async></script>
+    <script src="./scripts/banner.js" async></script>
+    <script src="./scripts/menuButton.js" async></script>
+
+</head>
+
+<body>
+    <div class="banner">
+        <div class="bannerContent">
+            <div class="bannerText">
+                <strong>Reminder:</strong> Don't forget to attend our Chamber Meet and Greet, Wednesday at 7:00 PM. See you there!
+                <button class="bannerClose" type="button">Ⅹ</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <header class="clearfix">
+        <div class="mainHeader">
+            <div id="logo">
+                <img src="./images/design-null.png" alt="VCC logo"> 
+            </div>
+                <h1 class="title">Vineyard Chamber of Commerce</h1>
+                <button id="menu"></button>
+                <nav>
+                    <ul class="primaryNav">
+                        <li class="link"><a href="index.html">Home</a></li>
+                        <li class="link"><a href="discover.html">Discover</a></li>
+                        <li class="link"><a href="directory.html">Directory</a></li>
+                        <li class="link"><a href="join.html">Join</a></li>
+                    </ul>
+                </nav>
+                
+                <div id="socialMedia">
+                    <a href="https://www.facebook.com/"><img class="social-icons" src="images/fb_icon.webp" alt="facebook"></a>
+                    <a href="https://www.youtube.com/"><img class="social-icons" src="images/youtube_icon.png" alt="youtube"></a>
+                    <a href="https://www.twitter.com/"><img class="social-icons" src="images/Twitter_Icon.webp" alt="twitter"></a>
+
+                </div>
+                    
+                    
+        </div>
+    </header>
+
+    <main class="mainGrid">
+
+                    
+        <div id="heroDiv">
+            <picture> 
+                <source srcset="./images/VineyardHeroSmall.jpeg" media="(max-width; 500px:)"> 
+                <source srcset="./images/VineyardHeroMedium.jpeg" media="(max-width; 1000px:)"> 
+                <img src="images/VineyardHero.jpeg" alt="Hero Image" >
+            </picture>
+        </div>
+                        
+                    
+                    
+        <div id="event">
+            <h2>Our journey to inspire local commerce</h2>
+                <a id="joinUs" href="./join.html">Join Our Growing Community</a>
+                <p> Welcome to the heart of vineyard country, where innovation meets tradition and businesses flourish in synergy. The Vineyard Chamber of Commerce stands as the cornerstone of our community, dedicated to fostering growth, collaboration, and prosperity among local enterprises.
+                </p>
+                <p>
+                
+                    Joining the Vineyard Chamber of Commerce opens doors to a wealth of opportunities. Whether you're a seasoned entrepreneur or just starting out, our chamber provides invaluable networking events, advocacy on local business issues, marketing support, and access to a vibrant community of like-minded professionals. Together, we cultivate success and celebrate the unique flavors of our region, ensuring every business thrives in the rich soil of our shared prosperity. Discover the difference membership can make and grow with us at the Vineyard Chamber of Commerce.
+                </p>
+                        
+        </div>
+                    
+        <div class="weatherDiv" id="weatherDiv">
+                <h2>Weather </h2>
+            
+                <section class="currentWeather">
+                    <h3 class="infoH3"> Weather in Vineyard  </h3> 
+                    <p> Current Temp: <span id="current-temp"></span></p>
+                    <figure>
+                        <figcaption></figcaption>
+                        <img id="weather-icon" src="./images/weather.png" alt="placeholder">
+                        
+                    </figure>
+                </section>
+                <section class="forecast">
+                    <h3> Three Day Forecast</h3>
+                    <table class="table">
+                        <tbody id="3day">
+                            <tr>
+                                <th></th>
+                                <th class="forcastDay1" id="forcastDay1"></th>
+                                <th class="forcastDay2" id="forcastDay2"></th>
+                                <th class="forcastDay3" id="forcastDay3"></th>
+                            </tr>
+                            <tr id="3dayTemp">
+                                <td><img src="./images/weather.png" alt="weathericon" id="weathericon" />
+                                <!-- <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by GOWI - Flaticon</a> --></td>
+                                <td><span class="forcastTemp1" id="forcastTemp1"></span></td>
+                                <td><span class="forcastTemp2" id="forcastTemp2"></span></td>
+                                <td><span class="forcastTemp3" id="forcastTemp3"></span></td>
+                            </tr>
+                            <tr id="3dayIcon">
+                                <td><span id="5dayTemp1"></span></td>
+                                <td><img id="forcastIcon1" src="./images/VineyardLogo.png" alt="placeholder"></td>
+                                <td><img id="forcastIcon2" src="./images/VineyardLogo.png" alt="placeholder"></td>
+                                <td><img id="forcastIcon3" src="./images/VineyardLogo.png" alt="placeholder"></td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </section>
+        </div>
+                    
+                    
+        <div id="news">
+            <h3>Latest News</h3>
+            <h4>Vineyard Chamber Welcomes New Members</h4>
+            <p>The Vineyard Chamber of Commerce is pleased to announce the addition of Dawn's Catering and Mandi's Floral to its esteemed membership. Known for their culinary expertise and creative floral designs, these businesses enrich our community with their exceptional services. Their commitment to excellence aligns perfectly with the Chamber's mission to foster growth and collaboration among local enterprises.</p>
+
+        </div>
+                    
+                    
+
+        <div id="spotlight1">
+   
+            <h3>Spotlight! Jack's Pest Control</h3>
+            <img src="./images/JacksPest.png" alt="Jack's Pest control logo  ">
+            <h4>Roar into a Pest-Free Tomorrow with Pride!</h4>
+            <p>Jack and his company have proven to be one of the most reliable assets Vineyard has. Both as a service and chamber members. </p>
+                            
+        </div>
+
+        <div id="spotlight2">
+   
+            <h3>Spotlight! Dire Delivery</h3>
+            <img src="./images/DireDelivery.png" alt="Dire delievery company logo  ">
+            <h4>Swift and Sure: Dire Deliveries for a Howling Success!</h4>
+            <p> Dire Delievery, when deadlines are tight and deliveries need to be met, I wouldn't trust anyone else! </p>
+                            
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <div id="contactInfo">
+                <h4>*** Contact: Vineyard Chamber of Commerce ***</h4>
+                <p id="footerP" >
+                    Vineyard UT <br>
+                    84059<br>
+                    VineyardCM@gmail.com <br><br>
+                </p>
+        </div>
+        
+        <div id="cpInfo">
+        <p id="subFooter">
+            &copy; <span id="copy-year"></span> Matthew Shank | WDD 230 | Chamber Project | Last Updated: <span id="last-modified"></span>
+        </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='Author' content="Matthew Shank">
+    <meta name="Description" content="Home page for Matthew Shank wdd230 class">
+   
+    <meta property="og:title" content="Matthew Shank - WDD 230 - Frontend Development" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="https://mattmann24.github.io/wdd230/" />
+    <meta property="og:image" content="https://u.realgeeks.media/utahrealtygroup/vineyard-utah-1.jpg" />
+    
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+     
+    <script src="./scripts/getdates.js" async></script>
+    <script src="./scripts/hambutton.js" async></script>
+    <script src="./scripts/visitCounter.js" async></script>
+    <script src="./scripts/links.js" defer></script>
+    <script src="./scripts/weather.js" async></script>
+    <title>Matthew Shank - WDD 230 - Web Frontend Development </title>
+    <link rel="icon" href="./images/MS_favicon.ico">
+
+</head>
+<body>
+    <div class="headerGrid">
+        <header class="profileGrid">
+            <h1 class="headerName">Matthew Shank</h1>
+            <img class="profilePic" src="./images/profile.png" alt="Profile picture of Matthew Shank">
+            
+        </header>
+    
+        <nav>
+            <button id="menu"></button>
+            <ul class="site-links">
+                <li class="site-link"><a href="#">Home</a></li>
+                <li class="site-link"><a href="./lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li class="site-link"><a href="chamber/index.html">Chamber</a></li>
+                <li class="site-link"><a href="https://www.byui.edu/" target="_blank">BYUI</a></li>
+                <li class="site-link"><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/enos/1?lang=eng&id=p4#p4" target="_blank">Scripture</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <h2 class="pageTitle">WDD 230 | Frontend Development</h2>
+        <div class="maingrid">
+        
+            <section class="classCard">
+                <h2 class="classCardH3">Learning Activity Links</h2>
+                <ul id="activityLinks" class="activityLinks">
+
+                    <li class="activity-link">Lesson 1: <a href="./lesson01/holygrail.html">Holy Grail</a></li>
+                         <!-- <li class="activity-link">Lesson 2: <a href="./lesson02/design.html">Design</a><a href="./lesson02/design-principles.html"> | Design-Principles</a></li>
+                    <li class="activity-link">Lesson 3: <a href="./lesson03/images/Week3_W3_ex.png">W3 Excercise</a><a href="https://codepen.io/Matthew-Shank/pen/XWweBqj"> | W3 CodePen</a><a href="https://codepen.io/Matthew-Shank/pen/pomWZQJ"> | W3 H-Menu</a></li>
+                    <li class="activity-link">Lesson 5: <a href="./lesson05/bom.html">BOM</a></li>
+                    <li class="activity-link">Lesson 6: <a href="./lesson06/images/landscape .webp">WebP</a></li>
+                    <li class="activity-link">Lesson 7: <a href="./lesson07/lazyload.html">Lazy Loader</a></li>
+                    <li class="activity-link">Lesson 8: <a href="./lesson08/tableBuild.html">HTML Table | </a><a href="./lesson08/Form-start/index.html">Form Template</a><a href="./form.html"> | My Form</a></li>
+                    <li class="activity-link">Lesson 9: <a href="./lesson09/prophets.html">Prophets </a></li>   -->
+
+                </ul>
+            </section>
+            <section class="infoCard">
+                <h2 class="infoH2">Information</h2>
+                <div class="weather">
+                    <h3 class="infoH3"> Weather in Vineyard:  </h3> 
+                    <p> Current Temp: <span id="current-temp"></span></p>
+                    <figure>
+                        <figcaption></figcaption>
+                        <img id="weather-icon" src="./images/MS_favicon.ico" alt="placeholder">
+                        
+                    </figure>
+                </div>
+                <div>
+                    <h3 class="infoH3">Page visits <span class="label"> : </span><span class="visits"></span></h3>
+                </div>
+                <div>
+                    <h3 class="infoH3">Moon phases</h3>
+                </div>
+            </section>
+            <section class="townMap">
+                <iframe class="vineyard" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12170.612768039893!2d-111.74954195!3d40.30565875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1718515138085!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footerGrid">
+            <p> &copy; <span id="copy-year"></span> Matthew Shank </p>
+            <p class="last-modified">Last Updated: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

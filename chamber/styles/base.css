@@ -1,0 +1,730 @@
+.mainHeader{
+  display: grid;
+  grid-template-columns: repeat( 7, 1fr);
+  background-color: #3e6fac;
+  color: black;
+  margin: 0;
+  border-style: ridge;
+  max-width: 100%;
+}
+
+#logo img {
+  width: 90px;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+.title {
+  justify-self: center;
+  grid-column: 1/3;
+  
+  color:#0C1F41;
+  background-color: white;
+  border-radius: 4px;
+  border-style: solid;
+  padding:.75rem;
+}
+
+nav{
+  display: grid;
+  grid-column: 3/7;
+}
+
+
+.primaryNav {
+
+  background-color: #3e6fac;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-content: center;
+  list-style-type: none;
+  max-width: 100%;
+  
+}
+
+.link a {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 2rem;
+  justify-self: center;
+  color: white;
+  border-bottom: solid;
+  border-color: #0C1F41;
+  border-radius: 6px;
+  border-width: 2px;
+  padding: 1rem;
+}
+
+.link a:hover{
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #0C1F41;
+  color: white;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+
+div #socialMedia{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: right;
+  grid-column: 7;
+}
+div #socialMedia img{
+  max-width: 100%;
+  width: 2em;
+  height: auto;
+
+}
+
+/*  Main CSS  */
+
+.mainGrid{ 
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  max-width: 100%;
+  grid-gap: .3em;
+
+}
+
+#heroDiv {
+  display: grid;
+  max-width: 100%;
+  justify-self: center;
+  grid-row: 1;
+  grid-column: 1/4
+  
+}
+#heroDiv picture img {
+  max-width: 100%;
+  justify-self: center;
+}
+
+#event {
+  display: grid;
+  
+  grid-row: 2;
+  grid-column: 1;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #0C1F41;
+  border-width: 2px;
+
+}
+
+#event p{
+  padding: .5em;
+}
+
+
+#weatherDiv {
+  grid-row: 2; 
+  
+
+  display: grid;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #0C1F41;
+  border-width: 2px;
+}
+
+#weatherDiv img {
+  width: 3rem;
+  height: auto;
+  max-width: 100%;
+}
+
+#news{
+  display: grid;
+  grid-row: 2; 
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #0C1F41;
+  border-width: 2px;
+  margin: 0%;
+  
+  
+}
+
+#joinUs{
+  background-color: #3e6fac;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 5px;
+  margin: .5em;
+  text-align: center;
+
+}
+#joinUs:hover {
+  background-color:#0C1F41;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 5px;
+  margin: .5em;
+  text-align: center;
+}
+
+#spotlight1 {
+  display: grid;
+  grid-row: 3; 
+  grid-column: 3;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #0C1F41;
+  border-width: 2px;
+}
+
+#spotlight2 {
+  display: grid;
+  grid-row: 3; 
+  grid-column: 1;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #0C1F41;
+  border-width: 2px;
+
+}
+
+#spotlight1 p, h4 {
+  margin: .5em;
+
+}
+#spotlight2 p, h4 {
+  margin: .5em;
+
+}
+
+#spotlight1 img{
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  justify-self: center;
+}
+
+#spotlight2 img{
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  justify-self: center;
+}
+
+#event {
+
+  margin: 0%;
+  padding: 0%;
+}
+
+
+#event h2{
+  display: flex;
+  background-color: #0C1F41;
+  color: white;
+  margin: 0%;
+  border-radius: 6px;
+  padding: .5em;
+  max-height: 25px;
+
+}
+
+#event p{
+  
+    padding: .5em;
+
+}
+
+.weatherDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0%;
+  padding: 0%;
+
+}
+
+.weatherDiv h2{
+  grid-row: 1;
+  grid-column: 1/3;
+  background-color: #0C1F41;
+  color: white;
+  margin: 0%;
+  border-radius: 6px;
+  padding: .5em;
+  max-height: 25px;;
+
+}
+
+.currentWeather {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 2em;
+ 
+}
+
+.forecast {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 2em;
+}
+
+
+
+#news h3{
+  background-color: #0C1F41;
+  color: white;
+  margin: 0%;
+  border-radius: 6px;
+  height: 25px;
+  padding: .5em;
+}
+
+#news p{
+  padding: .5em;
+
+}
+
+
+
+#spotlight1 {
+
+  margin: 0%;
+  padding: 0%;
+
+}
+#spotlight1 h3{
+  display: flex;
+  background-color: #0C1F41;
+  color: white;
+  margin: 0%;
+  border-radius: 6px;
+  padding: .5em;
+
+}
+
+#spotlight2 {
+
+  margin: 0%;
+  padding: 0%;
+
+}
+
+
+#spotlight2 h3{
+  display: flex;
+  background-color: #0C1F41;
+  color: white;
+  margin: 0%;
+  border-radius: 6px;
+  padding: .5em;
+
+}
+
+
+footer {
+  display: grid;
+  background-color: #3e6fac;
+
+}
+
+#contactInfo {
+  grid-column: 1;
+
+}
+
+#contactInfo h4 {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  border-bottom: #0C1F41;
+}
+
+#contactInfo p {
+  color:white;
+  
+  text-align: center;
+
+}
+
+
+
+#cpInfo {
+
+  grid-column: 2;
+  color: white;
+  
+
+}
+
+#cpInfo #subFooter p {
+  justify-content: center;
+  text-align: center;
+  
+}
+
+/* Discover CSS */
+
+.visitTracker .visits{
+  color:white;
+  font-size: 1.2em;
+  border-style: double;
+  border-color:#0C1F41;
+  border-radius: 6px;;
+  padding: 1rem;
+  grid-column: 2/4;
+}
+
+.discoverh1{
+  text-align: center;
+}
+
+#mainDiscoverGrid {
+  display: Grid;
+  grid-gap: 1rem;
+  grid-template-rows: auto;
+}
+
+#card1{
+  grid-row: 1;
+  border-style:outset;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color:#0C1F41;
+  margin: 0%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+#card1 h3{
+  grid-row: 1;
+  text-align: center;
+  grid-column: 1/4;
+  font-size: 2em;
+  margin:.5em;
+}
+#card1 img{
+  height:300px;
+  width: auto;
+  max-height: 100%;
+  grid-row: 2;
+  align-content: center;
+  grid-column: 2;
+}
+
+#card1 p{
+  padding: 1rem;
+  text-align: center;
+  grid-row:3;
+  grid-column: 1/4;
+  
+}
+
+#card2{
+  grid-row: 1;
+  border-style:outset;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color:#0C1F41;
+  margin: 0%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+#card2 h3{
+  grid-row: 1;
+  text-align: center;
+  grid-column: 1/4;
+  font-size: 2em;
+  margin:.5em;
+}
+#card2 img{
+  height:300px;
+
+  justify-self: center;
+  max-width: 100%;
+  grid-row:3;
+  align-content: center;
+  grid-column: 2;
+}
+#card2 p{
+  padding: 1rem;
+  text-align: center;
+  grid-row:2;
+  grid-column: 1/4;
+}
+
+#card4 #lake{
+  height:300px;
+  width: auto;
+  justify-self: center;
+  max-height: 100%;
+}
+
+#card3{
+  grid-row:2;
+  border-style:outset;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color:#0C1F41;
+  margin: 0%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+#card3 h3{
+  grid-row: 1;
+  text-align: center;
+  grid-column: 1/4;
+  font-size: 2em;
+  margin:.5em;
+}
+
+#card3 img{
+  height:300px;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  grid-column: 2/4;
+}
+
+#card3 p{
+  padding: 1rem;
+  text-align: center;
+  grid-row:2;
+  grid-column: 1;
+}
+
+#card4{
+  grid-row: 2;
+  border-style:outset;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color:#0C1F41;
+  margin: 0%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#card4 h3{
+  grid-row: 1;
+  text-align: center;
+  grid-column: 1/8;
+  font-size: 2em;
+  margin:.5em;
+}
+#card4 img{
+  height:300px;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  grid-column: 5/8;
+}
+#card4 p{
+  padding: 1rem;
+  text-align: center;
+  grid-row:2;
+  grid-column: 2/5;
+}
+
+
+#card5{
+  grid-row: 3;
+  border-style:outset;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color:#0C1F41;
+  margin: 0%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1rem;
+}
+
+#card5 h3{
+  grid-row: 1;
+  text-align: center;
+  grid-column: 1/4;
+  font-size: 2em;
+  margin:.5em;
+}
+#card5 img{
+  height:300px;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  grid-column: 1/3;
+}
+#card5 p{
+  padding: 1rem;
+  text-align: center;
+  grid-row:2;
+  grid-column: 3;
+}
+
+#card6{
+  grid-row: 3;
+  border-style:outset;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color:#0C1F41;
+  margin: 0%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 1rem;
+}
+
+#card6 h3{
+  grid-row: 1;
+  text-align: center;
+  grid-column: 1/8;
+  font-size: 2em;
+  margin:.5em;
+}
+
+#card6 img{
+  height:300px;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  grid-column: 1/5;
+  grid-row:2;
+}
+
+#card6 p{
+  padding: 1rem;
+  text-align: center;
+  grid-row:2;
+  grid-column: 5/8;
+}
+
+
+#mainFormDiv {
+  display: grid; 
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+#formDiv div {
+  grid-column: 1;
+
+}
+
+#memberInfo div {
+  grid-column: 2;
+
+}
+
+.banner {
+  background-color: #0C1F41;
+  
+}
+
+.bannerContent {
+  padding: 16px;
+  max-width: 1000px;
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+}
+
+.bannerText{
+  color: white;
+  flex-grow: 1;
+  line-height: 2;
+  font-size: larger;
+
+}
+
+.bannerClose {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+#cardsDirectory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  grid-gap: 2rem;
+
+}
+
+#cardsDirectory section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1em;
+  grid-gap: 1em;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color:#0C1F41;
+  margin: 0 auto;
+  width: 345px;
+  flex-direction: column;
+  padding: .5em;
+
+}
+
+#cardsDirectory section h2 {
+  color: white;
+}
+#cardsDirectory section section{
+
+padding: 0em;
+margin: 0em;
+background-color:white;
+}
+
+#cardsDirectory section section h5 {
+  color:#0C1F41;
+  padding: 0em;
+  margin: 0em;
+
+}
+
+#cardsDirectory img {
+  max-width: 320px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#listDirectory {
+  position: absolute;
+
+}
+
+#listDirectory ul {
+  Display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0%;
+  Margin: 0%;
+  background-color:#3e6fac;
+  border-style: outset;
+}
+
+#listDirectory h5, .directoryListp {
+  color: black;
+  background-color: aliceblue;
+  border-radius: 3px;
+  border-style: outset;
+  padding: .5em;
+  margin: .5em;
+  
+
+}
+
+.buttonMenu {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+	display: none; /* hide hamburger button */
+	
+}

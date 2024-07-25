@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Matthew Shank">
+<meta name="description" content="Scoots home page for attracting customers">
+<title>Scoots | Rentals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="./images/scootslogo.ico">
+
+<meta property="og:title" content="Scoots" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mattmann24.github.io/wdd230/scoots" />
+<meta property="og:image" content="https://mattmann24.github.io/wdd230/scoots/images/scootslogo.png" />
+
+
+
+<!--<link rel="stylesheet" href="./styles/larger.css"> -->
+ 
+<link rel="stylesheet" href="./styles/base.css"> 
+<link rel="stylesheet" href="./styles/medium.css">
+
+<script src="./scripts/menubutton.js" async></script>
+<script src="./scripts/getdates.js" async></script>
+<script src="./scripts/rentals.js" defer></script>
+
+</head>
+<body>
+    <header class="clearfix">
+        <div class="mainHeader">
+            <div id="logo">
+                <img src="./images/scootslogo.png" alt="Scoots logo"> 
+            </div>
+            
+                    
+            <button id="menu"></button>
+            <ul class="primaryNav">
+                <li class="link"><a href="./index.html">Home</a></li>
+                <li class="link"><a href="./rentals.html">Rentals</a></li>
+                <li class="link"><a href="./reservations.html">Reservations</a></li>
+                <li class="link"><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <img src="./images/scootsheader.png" alt="Scoots">
+            
+ 
+                    
+        </div>
+    </header>
+
+    
+<main>
+    <div class="h1flex">
+        <h1 class="title">Rentals</h1>
+    </div>
+    
+
+
+   
+    <!-- Json File of pricing and displaying that information -->
+    <div id="rentalCardsInfo"></div>
+
+    <div id="rentalPrice">
+        <table>
+            <caption>Rental Price</caption>  <!-- info is pulled form the json file  -->
+            <thead>
+        
+                <tr>
+                    <th class='column' scope="col"></th>
+                    <th class='column' scope="col"></th>
+                    <th class='column' colspan="2" scope="col">Reservation</th>
+                    <th class='column' colspan="2" scope="col">Walk-In</th>
+                </tr>
+                <tr>
+                    <th class='column' scope="col">Rental Type</th>
+                    <th class='column' scope="col">Max Capacity </th>
+                    <th class='column' scope="col">Half Day</th>
+                    <th class='column' scope="col">Full Day</th>
+                    <th class='column' scope="col">Half Day</th>
+                    <th class='column' scope="col">Full Day</th>
+                </tr>
+            </thead>
+
+            <tbody id="rentalInfo">
+               
+            </tbody>
+        </table>
+
+    </div>
+
+</main>
+
+</body>
+
+<footer>
+    <div id="contactInfo">
+        <h4>* Contact Us: Scoots*</h4>
+        <p id="footerP" >
+            Cozumel Mexico <br>
+            84059<br>
+            Scoots@gmail.com <br><br>
+        </p>
+    </div>
+
+    <div id="cpInfo">
+        <p id="subFooter">
+        &copy; <span id="copy-year"></span> Matthew Shank | WDD 230 | Scoot's Final Project | Last Updated: <span id="last-modified"></span>
+        </p>
+    </div>
+    <div id="socialMedia">
+        <a href="https://www.facebook.com/"><img class="social-icons" src="images/fb_icon.webp" alt="facebook"></a>
+        <a href="https://www.youtube.com/"><img class="social-icons" src="images/youtube_icon.png" alt="youtube"></a>
+        <a href="https://www.twitter.com/"><img class="social-icons" src="images/twitter_icon.webp" alt="twitter"></a>
+
+    </div>
+</footer>
+</html>
