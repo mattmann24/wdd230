@@ -618,3 +618,7 @@ h2 {
     margin: .5rem;
     padding: .5rem;
 }
+
+footer div {
+    padding: 1rem;
+}
