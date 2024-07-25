@@ -1,4 +1,26 @@
 
+p,
+label,
+a,
+li,
+th,
+strong {
+    font-size: 1rem;
+    font-family: system-ui;
+}
+h1,
+h2,
+h3, 
+h4,
+h5,
+a,
+li,
+th,
+strong,
+label {
+    font-family: system-ui;
+}
+
 header {
     background-color: #3d0905;
 }
@@ -139,6 +161,8 @@ body {
 }
 
 .card p {
+    font-family: system-ui;
+    font-size: 1rem;
     padding: 1rem;
     margin: 0%;
 }
@@ -289,6 +313,12 @@ footer {
 
 }
 
+
+
+#thankyousubmitimg {
+    max-width: 100%;
+}
+
 #callToLink:hover {
     background-color: #3d0905;
     color:#E6E5E4;
@@ -310,6 +340,8 @@ footer {
 .businessInfoDiv {
     padding-left:2rem;
     padding-right: 2rem;
+    border-style: outset;
+    margin:.25rem;
 }
 
 
@@ -343,21 +375,21 @@ caption {
     caption-side: top;
     color: #3d0905;
     font-size: 2.5rem;
+    font-family: system-ui;
 }
 
-#tableTitle {
-   background-color: rgb(78, 110, 88);
-   color: white;
-}
+
 
 th, td {
 	padding: 7px 15px;
 	border: 1px solid var(--borderlight);
+    font-family: system-ui;
 }
 
 th {
 	
 	font-size: larger;
+    font-family: system-ui;
    
     border-bottom-style: solid;
     border-color: #E6E5E4;
@@ -365,6 +397,7 @@ th {
 
 td {
 	text-align: center;
+    font-family: system-ui;
     
 }
 
